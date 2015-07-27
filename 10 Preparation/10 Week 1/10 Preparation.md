@@ -8,4 +8,4 @@
 
 ## Harvard Lecture 0, continued
 
-![embed](https://www.youtube.com/embed/KUB-aJXquUA?rel=0&showinfo=0&start=425&end=2996)
+![embed](https://www.youtube.com/embed/KUB-aJXquUA?rel=0&showinfo=0&start=425&end=2984)
