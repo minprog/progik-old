@@ -103,12 +103,12 @@ The shell (again, shell is simply a common synonym) is a *textual* view of your 
         - If this does not work, try this longer command: c:\python27\python instead
         - If this longer command does work, you do have Python, but just need the longer command to run it. (That can be fixed - ask!)
 
-- If you see the Python prompt of three greater-than signs >>>, you're set! Head down to the Trying out Python at the Python shell section...
+- If you see the Python prompt of three greater-than signs `>>>`, you're set! Head down to the Trying out Python at the Python shell section...
     - If not, you'll need to install Python... that's the next section
 
 - Oh wait! First you need to be able to get out of Python:
-    - On a Mac: **>>> quit()**    don't type the >>>
-    - On Windows: **>>> quit()**    don't type the >>>
+    - On a Mac: `>>> quit()`    don't type the `>>>`
+    - On Windows: `>>> quit()`    don't type the `>>>`
 
 ## On your own machine? Install Python!
 
@@ -122,7 +122,7 @@ Now that you have Python working, try out the language in its fundamental form: 
 
 - First, arrange your windows so that you can see the entirety of the browser and your shell (or terminal) windows.
 - Start Python in the terminal window
-- If nothing is currently running, you'll see a prompt of something like this **>>>**.
+- If nothing is currently running, you'll see a prompt of something like this `>>>`.
 - In general, this "shell" is an area for experimenting with the Python language. The "prompt" tells you that Python is ready to go. You might try 6*7 as a first computation at the prompt. Caution: deep wisdom may result.
 - If you have Python working so far, try some larger computations...
 - Try computing a googol (ten to the hundredth power). The power operator in Python is two asterisks **. So, at the prompt you would type
