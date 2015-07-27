@@ -1,0 +1,2 @@
+# progik
+Programmeren voor Informatiekunde
