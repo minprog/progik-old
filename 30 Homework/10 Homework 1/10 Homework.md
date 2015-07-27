@@ -6,4 +6,4 @@ Codecademy is a free website where you can learn to program in various languages
 
 [![codecademy](codecademy.png)](https://www.codecademy.com/tracks/python/resume)
 
-We ask that you complete the course up to and including the section "Exam statistics". You do not have to do the final two sections, but if your going pretty fast, please feel free to do so!
+We ask that you complete the course up to and including the section "Exam statistics". You do not have to do the final three sections, but if your going pretty fast, please feel free to do so!
