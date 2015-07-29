@@ -61,19 +61,19 @@ From there, feel free to start by pasting in the following code, which gets you 
 
 - You may write the dialog however you like -- below is an example dialog if you'd like one to follow. We are positive that you can improve on this interaction, however! Here are two distinct runs of the program:
 
->>> 
-Choose your weapon: rock
-the user (you) chose rock
-the comp (I) chose paper
-Ha! I really chose paper -- I WIN!
+        >>> 
+        Choose your weapon: rock
+        the user (you) chose rock
+        the comp (I) chose paper
+        Ha! I really chose paper -- I WIN!
 
->>> 
-Choose your weapon: paper
-the user (you) chose paper
-the comp (I) chose dynamite
-I REALLY WIN!
+        >>> 
+        Choose your weapon: paper
+        the user (you) chose paper
+        the comp (I) chose dynamite
+        I REALLY WIN!
 
->>> 
+        >>> 
 
 Note that taunting and/or praising the assistants with your rock-paper-scissors dialog is encouraged -- and even more, as the semester wears on and the assistants become increasingly sleep-deprived.
 
