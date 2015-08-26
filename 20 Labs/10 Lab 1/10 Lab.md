@@ -127,8 +127,8 @@ Not quite sure how to begin? Feeling a bit overwhelmed? Not to worry. Join Zamyl
 
 ![embed](https://www.youtube.com/embed/697pD31GCZg?rel=0)
 
-Incidentally, if you don't have the best Internet access, you're welcome to download Scratch's "offline editor" (which I used in Week 0's second lecture) at <http://scratch.mit.edu/scratch2download/>. But when done with your project offline, be sure to upload it to your account at <http://scratch.mit.edu/> via *File > Share to website* in the offline editor.
+Incidentally, if you don't have the best Internet access, you're welcome to download Scratch's "offline editor" at <http://scratch.mit.edu/scratch2download/>. But when done with your project offline, be sure to upload it to your account at <http://scratch.mit.edu/> via *File > Share to website* in the offline editor.
 
 Once finished with your project, click *See project page* in Scratch's top-right corner. Ensure your project has a title (in Scratch's top-left corner), some instructions (in Scratch's top-right corner), and some notes and/or credits (in Scratch's bottom-right corner). Then click *Share* in Scratch's top-right corner so that others (e.g., your TF!) can see your project. Finally, take note of the URL in your browser's address bar. That's your project's URL on MIT's website, and you'll need to know it later.
 
-Oh, and if you'd like to exhibit your project in Fall 2015's studio, head to <https://scratch.mit.edu/studios/1416378/>, then click *Add projects*, and paste in your own project's URL.
+Oh, and if you'd like to exhibit your project in 2015's studio, head to <https://scratch.mit.edu/studios/1416378/>, then click *Add projects*, and paste in your own project's URL.
