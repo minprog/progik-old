@@ -1,0 +1,8 @@
+name: hw2
+required:
+    - hw2pr2.py
+    - hw2pr3.txt
+    - hw2pr4.txt
+    - hw2pr6.txt
+optional:
+    - hw2pr5.txt

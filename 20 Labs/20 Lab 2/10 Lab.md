@@ -1,10 +1,8 @@
 # Lab 2: CS Labs, Python, and Policies… 
 
-*[20 points; individual]*
+This lab is worth 20 points of this week's homework!
 
 ## Welcome!
-
-You'll want to work through this lab -- it may well not take the full time... .
 
 *Careful!* - be sure not to skip the "intro to the terminal" portion... :-) That's where the basics of `cd`, `ls`, etc. are covered...
 
@@ -12,18 +10,16 @@ Good luck!
 
 ## What's this lab about?
 
-This first CS 5 lab is not necessarily a full two-hour lab. Our goal is to introduce you to a few things:
+This first lab is not necessarily a full two-hour lab. Our goal is to introduce you to a few things:
 
-- (optional) Logging in to the CS lab computers as a guest and finding this page (Google for hmc cs5 and click Lab0)
-- Completing the CS department form, our appropriate-use agreement.
 - Installing Python, if you don't have it...
 - Continuing with the Python computer language.
 - Getting a bit of familiarity with the command-line and a text editor (maybe Sublime) for Python
 - The Four fours challenge smile
-- Submitting your hw0pr1.py file to the CS submission system.
-- That's it! 
+- Submitting your **hw2pr1.py** file to the CS submission system.
+- That's it!
 
-If you'd like to continue, you'll be ready to try these, but they're not part of the lab -- feel free to come back to them later:
+In the rest of the week, you'll be working on these, so feel free to start on those now!
 
 - write rock-paper-scissors, if you haven't yet
 - work on Picobot
@@ -35,13 +31,11 @@ If you'd like to continue, you'll be ready to try these, but they're not part of
 
 Most of our interactions with computers are through the windows provided by the OS. "OS," short for *Operating System*, is usually either Windows or Mac OS -- certainly there are many others, flavors of Linux being the most common ones.
 
-Working through the click-and-drag interface of the OS is great!
-
-However, the OS detaches users from the underlying interactions among the computer's files. Having a clear picture of how files are being used and being familiar with them *underneath* the windowing system provide a set of skills that will come in handy for any and all future work in *creating* computation (not only consuming it, which the OS handles brilliantly!)
+Working through the click-and-drag interface of the OS is great! However, the OS detaches users from the underlying interactions among the computer's files. Having a clear picture of how files are being used and being familiar with them *underneath* the windowing system provide a set of skills that will come in handy for any and all future work in *creating* computation (not only consuming it, which the OS handles brilliantly!)
 
 ### Starting a terminal window
 
-So, to pull back the curtain on the world of files on which all computing today rests, open your machine's (or the lab machine's) *terminal*.
+So, to pull back the curtain on the world of files on which all computing today rests, open your machine's *terminal*.
 
 This goes by many names:
 
@@ -74,7 +68,7 @@ The shell (again, shell is simply a common synonym) is a *textual* view of your 
 
 - Within the terminal, you will see a prompt
     Typical Mac prompt: **1 %**  
-    Typcial Windows prompt **C:\Users\zdodds**    (well, typical if your name is zdodds, perhaps!)
+    Typcial Windows prompt **C:\Users\mstgeman**    (well, typical if your name is zdodds, perhaps!)
 
 - This is a place to type textual commands. Try these and you will see the path that shows your current location in the terminal:
     On a Mac: **pwd**  
@@ -112,9 +106,11 @@ The shell (again, shell is simply a common synonym) is a *textual* view of your 
 
 ## On your own machine? Install Python!
 
-If you don't have Python yet, here are the [instructions for setting up Python on your own machine](https://www.cs.hmc.edu/twiki/bin/view/CS5/OwnMachines). Let us know if you run into trouble! Trying to install things in lab is a great way to track down (and avoid) problems... .
+If you don't have Python yet, here are the instructions for setting up Python on your own machine. Let us know if you run into trouble! Trying to install things in lab is a great way to track down (and avoid) problems... .
 
+Here is [the link](https://www.python.org/downloads/release/python-2710/) to the installers for Python version 2.7.10.
 
+DO NOT install Python 3.x! This version of Python works differently. 2.7.10 is just as new but works the way we intend it to work!
 
 ## Trying out Python at the Python shell
 
@@ -132,22 +128,22 @@ Now that you have Python working, try out the language in its fundamental form: 
 - Admittedly not as enlightening, though the L at the end of the result is Python's indication that this is a Long number.
 - *(Not actually a good idea...)*    If you're feeling reckless or angry at your computer, you can crash Python (and maybe your machine) by asking it to compute a googolplex (ten to the googol power). It won't work. In fact, this really is not such a good idea: you will likely have to kill and restart at least Python, and your computer might slow down frustratingly in the meantime. But, it does show that numeric limits are easily reached!
 - Next type or paste this line of Python code:
-    - print "Zero is", 4+4-4-4
-    - You should see the output Zero is 0
+    - `print "Zero is", 4+4-4-4`
+    - You should see the output **Zero is 0**
     - Notice that you used exactly four fours to create the numeric value 0 here... extending that is the challenge in this week's lab...
 
 ## Trying out Python at the Python shell
 
 - Running code *in a file*...
 
-- Create a new empty file using your favorite text editor. If you don't have a favorite, you might use this course to try out [Sublime Text](https://www.cs.hmc.edu/twiki/bin/view/CS5/CreatingPlainTextFilesInAnyOS), as described on this page. That page has others, too.
+- Create a new empty file using your favorite text editor. If you don't have a favorite, you might use this course to try out [Sublime Text](http://www.sublimetext.com/2), as described on this page. That page has others, too.
 
 - Into your new file type or paste
 
         # -*- coding: utf-8 -*-
         #
         # Lab 0
-        # Filename:  hw0pr1.py
+        # Filename:  hw2pr1.py
         #
         #
         # Name:
@@ -155,14 +151,14 @@ Now that you have Python working, try out the language in its fundamental form: 
     
         print "Zero is", 4+4-4-4
 
-- Save that file as hw0pr1.py on your Desktop
+- Save that file as **hw2pr1.py** on your Desktop
         - remember that the Desktop is where your terminal-window session is currently resting...
         - also, you do need to explicitly type the .py !
         - When you save it with a .py extension (as it's called), you will see the Python source code colorize - this is also called syntax highlighting
 
 - Windows users: show all filename extensions!
 
-    If you're on Windows, we ask that you turn on the view of file extensions (such as .py, .txt, .doc, and so on)—at least for your semester in CS5. It can be very confusing if windows is hiding the extensions, because it may—or may not—be there. (The submission system needs it there.) If your Windows set up does not show every file's file extension by default, please enable all file extensions by following the directions on [this page](http://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7).
+    If you're on Windows, we ask that you turn on the view of file extensions (such as .py, .txt, .doc, and so on). It can be very confusing if windows is hiding the extensions, because it may—or may not—be there. (The submission system needs it there.) If your Windows set up does not show every file's file extension by default, please enable all file extensions by following the directions on [this page](http://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7).
 
 
 - Set up!
@@ -176,7 +172,7 @@ Now that you have Python working, try out the language in its fundamental form: 
 To run your file, go back over to the terminal.
 
 - Leave Python, if you're in it
-- Enter Python again, this time with python hw0pr1.py
+- Enter Python again, this time with **python hw2pr1.py**
 - If all goes well, the program should run
 - If not, please ask us!!
 
@@ -207,11 +203,11 @@ By the way, if you feel it's unfair that you don't have factorial and square roo
     print "4! is", math.factorial(4)
     print "the square root of 4 is", math.sqrt(4)
 
-## Hw 0, problem 1: Running a larger program from a file
+# Problem 1: Running a larger program from a file
 
 Underneath your four-fours solutions, copy-and-paste the following code into your Python file. If you'd like, you can comment-out the four-fours lines (with hashtags), or feel free to leave them in - up to you. 
 
-This will become your **hw0pr1.py** file:
+This will become your **hw2pr1.py** file:
 
     # four fours are above...
     
@@ -241,23 +237,22 @@ This will become your **hw0pr1.py** file:
 
 - Run the program simply to get a sense of how interaction works at the command-line...
 
-- To see how Python handles errors, try removing one of the two equals signs in the elif line, so that it reads elif name = 'Zach'. Python will tell you there is a "syntax error" and give you a chance to fix it.
+- To see how Python handles errors, try removing one of the two equals signs in the `elif` line, so that it reads `elif name = 'Zach'`. Python will tell you there is a "syntax error" and give you a chance to fix it.
 
 - Questions? Problems? Flag us down! Or ask whoever's next to you, if you'd like.
 
-- For this Homework 0, Problem 1 problem, all that's left is to submit your hw0pr1.py file. 
+- For this lab problem, all that's left is to submit your **hw2pr1.py** file. 
 
-It's completely OK if you've changed the file—in fact, we encourage you to improve the dialog in any way you'd like—but that is optional—the goal with this problem is to be sure that you can get Python running and then submit a file successfully on the CS 5 submissions page. That's next.
+It's completely OK if you've changed the file—in fact, we encourage you to improve the dialog in any way you'd like—but that is optional—the goal with this problem is to be sure that you can get Python running and then submit a file successfully. See below!
 
-## Complete! Optional—working further into homework 0
+## Complete!
 
-- If everything has worked smoothly (at least eventually!) you're finished with Lab 0!
-- Each week, if you work on the lab through the lab time—even if you don't complete the lab—you will receive full credit for the lab's problem(s). The sign-in sheet is how we make sure of this.
-- If you're finished early, you're welcome to head off to other things, if you'd like…
-- Or, if you're in a groove, you're welcome to continue to the next problem(s) on the week's hw
-    this week asks you to build a rock-paper-scissors-playing program…
-- If you look even further ahead, you'll see some material ("Picobot") that we will look at later (though it's also self-contained)
+- If everything has worked smoothly (at least eventually!) you're finished with this lab!
 
-## That's It!
+- If you're in a groove, you're welcome to continue to the next problem(s). This week we'll ask  you to build a rock-paper-scissors-playing program.
 
-Let us know if you have any questions about any of this or about the CS department in general…
+- If you look even further ahead, you'll see some material ("Picobot") that we will look at later (though it's also self-contained).
+
+## That's it!
+
+Let us know if you have any questions about any of this or about the CS department in general...

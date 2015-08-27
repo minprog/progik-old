@@ -1,4 +1,4 @@
-# Problem 3: Picobot, empty room
+# Picobot, empty room
 
 [25 points each; indiv. or pair]
 
@@ -16,7 +16,7 @@ Picobot starts at a *random* location in a room—you don't have control over Pi
 
 Not surprisingly, picobot has limited sensing power. It can only sense its surroundings immediately to the north, east, west, and south of it. For example,
 
-example picobot surroundings: 
+Example picobot surroundings: 
 
 ![pico](pico2.jpg)
 
@@ -26,7 +26,7 @@ In the above image, Picobot sees a wall to the north and west and it sees nothin
 
 The four squares surrounding picobot are always considered in NEWS order: an x represents empty space, the appropriate direction letter (N, E, W, and S) represents a wall blocking that direction. Here are all of the possible picobot surroundings:
 
-all possible picobot surroundings: 
+All possible picobot surroundings: 
 
 ![](pico3.jpg)
 
@@ -56,7 +56,7 @@ If this were picobot's only rule and if picobot began (in state 0) at the bottom
 
 ## Wildcards
 
-The asterisk `*` can be used inside surroundings to mean "I don't care whether there is a wall or not in that position." For example, xE** means "there is no wall North, there is a wall to the East, and there may or may not be a wall to the West or South."
+The asterisk `*` can be used inside surroundings to mean "I don't care whether there is a wall or not in that position." For example, `xE**` means "there is no wall North, there is a wall to the East, and there may or may not be a wall to the West or South."
 
 As an example, the rule 
 
@@ -84,20 +84,20 @@ Consider the following set of rules:
 
 Recall that picobot always starts in state 0. Picobot now consults the rules from top to bottom until it finds the first rule that applies. It uses that rule to make its move and enter its next state. It then starts all over again, looking at the rules and finding the first one from the top that applies.
 
-In this case, picobot will follow the first rule up to the "top" of its environment, moving north and staying in state 0 the whole time. Eventually, it encounters a wall to its north. At this point, the topmost rule no longer applies. However, the next rule "0 N*** -> X 1" does apply now! So, picobot uses this rule which causes it to stay put (due to the "X") and switch to state 1. Now that it is in state 1, neither of the first two rules will apply. Picobot follows state 1's rules, which guide it back to the "bottom" of its environment. And so it continues….
+In this case, picobot will follow the first rule up to the "top" of its environment, moving north and staying in state 0 the whole time. Eventually, it encounters a wall to its north. At this point, the topmost rule no longer applies. However, the next rule `0 N*** -> X 1` does apply now! So, picobot uses this rule which causes it to stay put (due to the "X") and switch to state 1. Now that it is in state 1, neither of the first two rules will apply. Picobot follows state 1's rules, which guide it back to the "bottom" of its environment. And so it continues...
 
 
 ## The assignment
 
 For this assignment, your task is to design two different sets of picobot rules:
 
-- hw 0, problem 3: one set that will allow picobot to completely cover an empty square room. 
+- hw 2, problem 3: one set that will allow picobot to completely cover an empty square room. 
 
     Remember to click on the "Enter rules for Picobot" before you try to run picobot.
 
 - You need to copy your rules into a plain-text .txt file on your computer!
-    - For the empty-room, be sure to name it hw0pr3.txt
-    - For the maze, be sure to name it hw0pr4.txt
+    - For the empty-room, be sure to name it **hw2pr3.txt**
+    - For the maze, be sure to name it **hw2pr4.txt**
 
 - Remember that your solutions must work from arbitrary starting positions within the environment.
 
@@ -111,7 +111,7 @@ For optional extra credit, try to create as efficient a solution as possible for
 
 - for problem 3 (the empty room), see if you can use only 6 rules [+2 points]
 - for problem 4 (the maze), see if you can use only 8 rules [+4 points]
-- You may also submit problem 5 (hw0pr5.txt), [+4 points]  with the Picobot rules for the "stalactite room" (with any number of rules): 
+- You may also submit problem 5 (**hw2pr5.txt**), [+4 points]  with the Picobot rules for the "stalactite room" (with any number of rules): 
     ![](picobotExCr.png)
 
 We don't (yet) know the minimum number of rules for that environment...!
