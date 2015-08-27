@@ -1,4 +1,4 @@
-# Problem 2: Rochambeau
+# Rochambeau
 
 [25 points; individual or pair]
 
@@ -10,7 +10,7 @@ This second problem asks you to practice
 - writing a bit of your own code (by altering another program, if you wish)
 - text-based input and output in Python
 
-The idea is this: use the discussion from class and hw0pr0.py's starter code to create a program that
+The idea is this: use the discussion from class and hw2pr1.py's starter code to create a program that
 
 - invites the user to play a game of "rock-paper-scissors."
 - It must let the user choose from among at least three options
@@ -24,10 +24,10 @@ The idea is this: use the discussion from class and hw0pr0.py's starter code to 
 
 Adding side comments to the graders who will be running your program is optional, but strongly encouraged!
 
-## Creating a new file named hw0pr2.py
+## Creating a new file named hw2pr2.py
 
-To create a new file named hw0pr2.py, open hw0pr0.py in a text editor, such as Sublime...
-Then chooce Save As... and save it as hw0pr2.py - you will need to type the .py extension...
+To create a new file named **hw2pr2.py**, open **hw2pr1.py** in a text editor, such as Sublime...
+Then chooce Save As... and save it as **hw2pr2.py** - you will need to type the **.py** extension...
 From there, feel free to start by pasting in the following code, which gets you on the way and matches some of our class discussion:
 
     # Rochambeau
@@ -49,9 +49,9 @@ From there, feel free to start by pasting in the following code, which gets you 
     if user == 'rock':
         print 'Ha! I really chose paper -- I WIN!'
 
-- Save this program as hw0pr2.py
+- Save this program as **hw2pr2.py**
 
-- Do I really have to use the name hw0pr2.py?     *Yes! Please do...*  The submission system is picky about the name of the files you're submitting!
+- Do I really have to use the name **hw2pr2.py**? *Yes! Please do...* The submission system is picky about the name of the files you're submitting!
 
 ## Details on how the program should work
 
@@ -109,4 +109,4 @@ These aren't really extra-credit (since the previous week offered that), but if 
 
 ## On to "picobot"
 
-The third and fourth problems on this assignment emphasize a very different way of thinking about computation. They don't use python, but a simulation called picobot. We will discuss it in the first week of CS 5 classes. Here's the link to the Picobot problems.
+The third and fourth problems on this assignment emphasize a very different way of thinking about computation. They don't use Python, but a simulation called **picobot**.
