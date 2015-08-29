@@ -1,9 +1,9 @@
 # Samenwerken, fraude en plagiaat
 
-Samenwerken tijdens dit vak is meestal niet toegestaan (als dit is toegestaan
+Samenwerken tijdens dit vak is vaak niet toegestaan (als dit is toegestaan
 dan wordt het expliciet bij de opdracht vermeld). Dit vak heeft als doel jouw
 persoonlijke programmeervaardigheid te ontwikkelen. Bij vervolgvakken is het
-vaak wél mogelijk om samen te programmeren.
+vaak wél mogelijk om intensief samen te programmeren.
 
 Tijdens de practica is het natuurlijk prima als je de opgave bespreekt met de
 student die naast je zit. Het is echter **niet toegestaan** om delen van code
