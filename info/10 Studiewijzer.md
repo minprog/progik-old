@@ -47,7 +47,8 @@ We willen graag dat je leert om snel prototypes te maken van programma's, zodat 
   inhalen op donderdag (alleen bij tijdige ziekmelding).
 
   Als je uitstekend werk levert en vroeg klaar bent, kun je de staf verzoeken om vrijstelling van
-  de aanwezigheidsverplichting. Stuur daarvoor een mail naar <progik@mprog.nl> en sluit je opdrachten van de week bij.
+  de aanwezigheidsverplichting. Je moet daarvoor je opdrachten van de week aan je werkgroep-assistent laat zien.
+  Als de assistent je opdrachten goedkeurt, krijg je vrijstelling voor de rest van de werkcolleges van de week.
   
 * We verwachten dat je, als het nodig is, op donderdag naar het laatstekanspracticum komt. De staf kan je hiervoor, in goed overleg, uitnodigen.
 

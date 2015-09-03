@@ -68,7 +68,7 @@ The shell (again, shell is simply a common synonym) is a *textual* view of your 
 
 - Within the terminal, you will see a prompt
     Typical Mac prompt: **1 %**  
-    Typcial Windows prompt **C:\Users\mstgeman**    (well, typical if your name is zdodds, perhaps!)
+    Typcial Windows prompt **C:\Users\mstgeman**    (well, typical if your name is mstgeman, perhaps!)
 
 - This is a place to type textual commands. Try these and you will see the path that shows your current location in the terminal:
     On a Mac: **pwd**  
@@ -178,7 +178,7 @@ To run your file, go back over to the terminal.
 
 ## Your task: four fours...
 
-The four fours challenge!    Now, add five more lines similar to this one in which you use arithmetic operations, `+`, `-`, `*`, `/`, parens `(`, `)`, and `**` (power) to compute the values `0` through `9` using only four fours. You may also use `44`, counting as two fours, or `4.`, the floating-point value of four, though neither of these is required to succeed with `0` through `0`. Here are what the results - but not the source code - will look like:
+The four fours challenge!    Now, add five more lines similar to this one in which you use arithmetic operations, `+`, `-`, `*`, `/`, parens `(`, `)`, and `**` (power) to compute the values `0` through `9` using only four fours. You may also use `44`, counting as two fours, or `4.`, the floating-point value of four, though neither of these is required to succeed with `0` through `9`. Here are what the results - but not the source code - will look like:
 
     Zero is 0
     One is 1
