@@ -2,9 +2,8 @@
 
 This week, we'll learn to program the Picobot and start writing our own programs in Python!
 
--> If you have not read last weeks sections, start there!
-[link](https://progik.mprog.nl/preparation/week-1)
--
+> If you have not read last weeks sections, start there!
+> [link](https://progik.mprog.nl/preparation/week-1)
 
 ## CS for All, Picobot and functions
 
