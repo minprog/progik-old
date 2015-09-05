@@ -20,7 +20,7 @@ Read the chapter any way you want, but do not forget to try out many of the exam
 
 So, make mistakes!
 
-[Read chapter 2.5-2.5](https://www.cs.hmc.edu/csforall/FunctionalProgramming/functionalprogramming.html#functioning-in-python)
+[Read chapter 2.5-2.6](https://www.cs.hmc.edu/csforall/FunctionalProgramming/functionalprogramming.html#functioning-in-python)
 
 ## Installing Python
 
