@@ -1,6 +1,6 @@
 # Picobot, empty room
 
-[25 points each; indiv. or pair]
+[25 points each]
 
 ## Introduction to Picobot
 

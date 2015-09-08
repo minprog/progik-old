@@ -1,6 +1,6 @@
 # Reading
 
-[5 points; individual]
+[5 points]
 
 Introduction to the readings!
 

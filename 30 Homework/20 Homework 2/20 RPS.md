@@ -1,6 +1,6 @@
 # Rochambeau
 
-[25 points; individual or pair]
+[25 points]
 
 ## An honesty-optional rock, paper, scissors program
 
