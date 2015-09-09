@@ -1,0 +1,6 @@
+name: hw3
+required:
+    - hw3pr0.txt
+    - hw3pr1.py
+    - hw3pr2.py
+    - hw2pr3.py

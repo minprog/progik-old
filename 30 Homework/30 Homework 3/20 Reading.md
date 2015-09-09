@@ -13,7 +13,7 @@ This week's article, "The end of theory," comes from *Wired* and dovetails with 
 
 After you have read the above article, write a response that addresses one or the other of the following questions.
 
-As with reading 0, please be sure you name your file hw1pr0.txt - it should be a plain-text .txt file. As a reminder, this link details how to [create plain-text files on any OS](https://www.cs.hmc.edu/twiki/bin/view/CS5Spring2015/CreatingPlainTextFilesInAnyOS).
+As with reading 0, please be sure you name your file hw3pr0.txt - it should be a plain-text .txt file. As a reminder, this link details how to [create plain-text files on any OS](https://www.cs.hmc.edu/twiki/bin/view/CS5Spring2015/CreatingPlainTextFilesInAnyOS).
 
 Choose one of these prompts and construct a paragraph (4-6 sentences is fine) that responds to it. Use/extend (or alter/refute) ideas from the article!
 
