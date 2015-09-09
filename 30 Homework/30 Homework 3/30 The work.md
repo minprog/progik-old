@@ -264,7 +264,7 @@ Next, write `letterScore( let )`. (Watch for capitalization!) Here is its descri
 
 To write this function you will need to use this mapping of letters to scores
 
-![](alphaScrable.gif)
+![](alphaScrabble.gif)
 
 *What!?* Do I have to write 25 or 26 if elif or else statements? No! Instead, use the in keyword:
 
