@@ -1,5 +1,7 @@
 # Hw 3, Part 2 (Lab): Functioning smoothly!
 
+[25 points]
+
 ## Using built-in functions
 
 To begin, enter Python (just python at the computer's command prompt).
