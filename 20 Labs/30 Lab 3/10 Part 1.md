@@ -1,5 +1,7 @@
 # Lab 3: Experimenting with Python
 
+[20 points]
+
 There are two parts to this lab:
 
 - the first part is `hw3pr1.py`: you'll gain experience splicing and interacting with Python data
@@ -139,7 +141,7 @@ Then, the code will print the value of the variable `answer0`.
 
 ### But how to run the code?   `python -i hw3pr1.py`
 
-To run your file, make sure you are in the location (Desktop or other folder) where `hw3pr1.py` is located. Dropbox, we hope!
+To run your file, make sure you are in the location (Desktop or other folder) where `hw3pr1.py` is located.
 
 Then, you can run at the computer's command prompt:
 
@@ -153,7 +155,7 @@ Here is a screenshot of Sublime Text + the terminal (on Windows):
 
 From the above, you see that the example problem's code will run and print, and you'll see that `answer0` is the list `[2, 5, 9]`.
 
-Also, the `-i` in the above command stands for interactive mode, which means Python enters an interactive session - with its **>>>** prompt.
+Also, the `-i` in the above command stands for interactive mode, which means Python enters an interactive session - with its **\>\>\>** prompt.
 
 There, you have access to the variables `e` and `pi` -- and can work on the next challenges...
 
@@ -170,7 +172,7 @@ The problems below ask you to create several lists using only the list named `pi
 
 - list indexing such as `pi[0]`
 - list slicing such as `e[1:]`
-- skip-slicing such as `=pi[6:4:-1]`
+- skip-slicing such as `pi[6:4:-1]`
 - list concatenation, `+`, such as `pi[:1] + e[1:]`     (do not use + to add values numerically)
 - the list-making operator, `[ , ]`    for example:    `[ e[2], e[0] ]`
 

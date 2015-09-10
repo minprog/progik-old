@@ -1,6 +1,6 @@
 # Reading
 
-[5 points; individual only]
+[5 points]
 
 ## The article
 
