@@ -1,4 +1,4 @@
-# Homework 2: Python
+# Homework 3: Recursion
 
 ## A Note About Extra Credit Problems
 
