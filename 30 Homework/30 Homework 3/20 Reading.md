@@ -7,7 +7,7 @@
 This week's article, "The end of theory," comes from *Wired* and dovetails with its theme of data and its possibilities.
 
 - Here is a link to the [article in Wired](http://www.wired.com/science/discoveries/magazine/16-07/pb_theory)
-- Here is a locally stored pdf, if you'd prefer: [end_of_theory.pdf](end_of_theory)
+- Here is a locally stored pdf, if you'd prefer: [end_of_theory.pdf](end_of_theory.pdf)
 
 ## The questions
 
