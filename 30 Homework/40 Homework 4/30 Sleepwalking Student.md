@@ -177,6 +177,7 @@ To analyze random walks, we need two terms:
 With these two terms in mind, here are the two questions we ask you to investigate:
 
 * What is the average final _signed-displacement_ for a random walker after making `100` random steps? What about after `N` random steps? As described above, the signed-displacement is just the output of `rwpos` minus the `start` location. Do **not** use `abs`.
+  
 * What is the average _squared-displacement_ for a random walker after making `100` random steps? What about after `N` random steps, in terms of `N`? Be sure you square the signed displacements **before** you sum the values in order to average them! 
 
 You should adapt the random-walk functions you wrote to investigate these two questions. In particular, you should
@@ -184,7 +185,9 @@ You should adapt the random-walk functions you wrote to investigate these two qu
 * **To-do item #1** Write a version of `rwpos` that does **not** print any debugging or explanatory information. Rather, it should simply return the final position. Call this new version `rwposPlain`. **Be careful!** the recursive call(s) will need to change so that they call `rwposPlain`, not `rwpos`!
   
 * **To-do item #2** Come up with a plan for how you will answer the two questions. This plan should include list comprehensions similar to the following:
-    LC = [ rwposPlain(0,100) for x in range(142) ]
+   
+     LC = [ rwposPlain(0,100) for x in range(142) ]
+     
    Not surprisingly, the `142` is not important -- except when you want to find the _average_ of the values created! Use `sum`
   
 * **To-do item #3** To build intuition, run the above list comprehension at the Python `\>\>\>` prompt. Look at the resulting value of `LC` (there should be 142 elements). Also, find the average of `LC`.
@@ -193,7 +196,9 @@ You should adapt the random-walk functions you wrote to investigate these two qu
   * `ave_signed_displacement( numtrials )`, which should run `rwposPlain(0,100)` for `numtrials` times and return the average of the result. Adapt the above list comprehension to be the central part of your function!
   * `ave_squared_displacement( numtrials )`, which should run `rwposPlain(0,100)` for `numtrials` times and return the average of the **squares** of the results! One way to do this is to create a slightly different list comprehension. Remember that `x\*\*2` is Python's way of squaring `x`. 
   
-* Then, use your functions and reflect on the results you find from these computational tests. To do this, place your answers inside your python program file by either making them comments (using the `#` symbol) OR, **even easier**, including them in triple-quoted strings (since they can include newlines). For example, 
+* Then, use your functions and reflect on the results you find from these computational tests. To do this, place your answers inside your python program file by either making them comments (using the `#` symbol) OR, **even easier**, including them in triple-quoted strings (since they can include newlines).
+
+For example:
 
     """
     In order to compute the average signed displacement for
