@@ -145,7 +145,7 @@ As an extra-credit challenge (a fun one), you might create a more elaborate slee
 
 **Hints:** this problem can be tricky because you are both adding a random step _and_ adding to the ongoing count of the total number of steps!
 
-One way to do this is to use the line `rest_of_steps = rwsteps( newstart, low, hi )` as the recursive call, with _an appropriate assignment to _`newstart` on the line above it, and an appropriate use of `rest_of_steps` in the return value below it... .
+One way to do this is to use the line `rest_of_steps = rwsteps( newstart, low, hi )` as the recursive call, with _an appropriate assignment to_ `newstart` on the line above it, and an appropriate use of `rest_of_steps` in the return value below it... .
 
 **Recursion limit exceeded?** You can get more memory for recursion by adding these lines to the top of your file:
 
