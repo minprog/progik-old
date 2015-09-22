@@ -1,3 +1,5 @@
+# Glossary
+
 UNIX
 : In the early days (70's/80's), UNIX was an operating system. But nowadays the term is used to describe an underlying philosophy on how to design (parts of) an operating system. Mac OS X and Linux seem to follow this philosophy. Windows does not.
 
