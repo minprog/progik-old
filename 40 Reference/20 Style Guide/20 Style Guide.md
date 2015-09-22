@@ -53,27 +53,6 @@ But do it like this:
 {: .language-python}
     # Compute student's average.
 
-### Example 3
-
-Atop your Python source code, add a comment block summarizing the goal of the
-program (what does it do for the user?), and also your name.
-
-{: .language-python}
-    # Problem Set 1
-    # Name: Jane Lee
-    # Collaborators: John Doe
-    # Time: 1:30
-    #
-    # This program calculates the average values of a series
-    # of numbers input by the user.
-
-### Example 4
-
-Have another look at the summary in the comments of Example 3. The summary is
-fairly long and does not fit a comfortable line's length. People read most
-comfortably when lines are about 45-90 characters in length (this also applies
-to books and other texts!).
-
 In order to split longer comments into multiple lines, just add another line
 starting with a `#`.
 
