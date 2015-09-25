@@ -1,0 +1,5 @@
+name: hw5
+required:
+    - hw5pr0.txt
+    - hw5pr1.py
+    - hw5pr2.py
