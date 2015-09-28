@@ -10,7 +10,7 @@ For each one, be sure to
 * include a docstring that briefly explains the function's inputs and what it does 
 
 
-##Caesar Cipher
+### Caesar Cipher
 
 The Caesar Cipher was one of the earliest ciphers ever invented. The method is named after Julius Caesar, who used it in his private correspondence. In this cipher, you encrypt a message by taking each letter in the message and replacing it with a _shifted_ letter. If you shift the letter `A` by one space, you get the letter `B`. If you shift the letter `A` by two spaces, you get the letter `C`. The image below is a picture of some letters shifted over by three spaces.
 
@@ -18,11 +18,15 @@ The amount by which the letters are shifted is also called the key, as you need 
 
 ![Caesar shift](caesar.jpg)
 
-###ASCII, and Using Numbers for Letters
+### ASCII, and Using Numbers for Letters
 
 How do we implement this shifting of the letters as code? We can do this by representing each letter as a number called an ordinal, and then adding or subtracting from this number to form a new ordinal (and a new letter). ASCII (pronounced “ask-ee” and stands for American Standard Code for Information Interchange) is a code that connects each character to a number between 32 and 126.
 
 The capital letters “A” through “Z” have the ASCII numbers 65 through 90. The lowercase letters “a” through “z” have the ASCII numbers 97 through 122. The numeric digits “0” through “9” have the ASCII numbers 48 through 57. Table 14-1 shows all the ASCII characters and ordinals.
+
+![embed](https://www.youtube.com/embed/hacBFrgtQjQ)
+
+![embed](https://www.youtube.com/embed/UPlR4eMMCmI)
 
 Modern computers use UTF-8 instead of ASCII. But UTF-8 is backwards compatible with ASCII, so the UTF-8 ordinals for ASCII characters are the same as ASCII’s ordinals.
 
