@@ -16,7 +16,7 @@ The Caesar Cipher was one of the earliest ciphers ever invented. The method is n
 
 The amount by which the letters are shifted is also called the key, as you need it to _unlock_ the message. The key for the Caesar Cipher will be a number from 1 to 26, because there are only 26 possible shifts until you come back around to the same letter again. Unless you know the key (that is, know the number used to encrypt the message), you won’t be able to decrypt the secret code.
 
-![Caesar shift](caesar.jpeg)
+![Caesar shift](caesar.jpg)
 
 ###ASCII, and Using Numbers for Letters
 
