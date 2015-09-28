@@ -1,6 +1,6 @@
-# Week 4 Preparations
+# Week 5 Preparations
 
-This week, we'll finish up with functional programming and recursion.
+This week, we'll finish up with functional programming.
 
 ## CS for All, Putting Google on the Map
 
