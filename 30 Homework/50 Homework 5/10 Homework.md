@@ -1,5 +1,4 @@
-
-#Sorting out Caesar!
+# Sorting out Caesar!
 
 [60 points] `hw5pr2.py`
 
