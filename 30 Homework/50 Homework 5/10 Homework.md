@@ -10,6 +10,26 @@ For each one, be sure to
 * name the function as specified **including capitalization** - this helps us test them smoothly
 * include a docstring that briefly explains the function's inputs and what it does 
 
+
+##Caesar Cipher
+
+The Caesar Cipher was one of the earliest ciphers ever invented. The method is named after Julius Caesar, who used it in his private correspondence. In this cipher, you encrypt a message by taking each letter in the message and replacing it with a _shifted_ letter. If you shift the letter `A` by one space, you get the letter `B`. If you shift the letter `A` by two spaces, you get the letter `C`. The image below is a picture of some letters shifted over by three spaces.
+
+The amount by which the letters are shifted is also called the key, as you need it to _unlock_ the message. The key for the Caesar Cipher will be a number from 1 to 26, because there are only 26 possible shifts until you come back around to the same letter again. Unless you know the key (that is, know the number used to encrypt the message), you won’t be able to decrypt the secret code.
+
+![Caesar shift](caesar.jpeg)
+
+###ASCII, and Using Numbers for Letters
+
+How do we implement this shifting of the letters as code? We can do this by representing each letter as a number called an ordinal, and then adding or subtracting from this number to form a new ordinal (and a new letter). ASCII (pronounced “ask-ee” and stands for American Standard Code for Information Interchange) is a code that connects each character to a number between 32 and 126.
+
+The capital letters “A” through “Z” have the ASCII numbers 65 through 90. The lowercase letters “a” through “z” have the ASCII numbers 97 through 122. The numeric digits “0” through “9” have the ASCII numbers 48 through 57. Table 14-1 shows all the ASCII characters and ordinals.
+
+Modern computers use UTF-8 instead of ASCII. But UTF-8 is backwards compatible with ASCII, so the UTF-8 ordinals for ASCII characters are the same as ASCII’s ordinals.
+
+![ASCII table](ascii.png)
+
+
 ##Function to write #1: encipher( S, n )
 
 Write the function `encipher( S , n )` that takes as input a string `S` and a non-negative integer `n` between 0 and 25. Then, `encipher` should return a new string in which the letters in `S` have been _rotated_ by `n` characters forward in the alphabet, wrapping around as needed.
@@ -30,6 +50,7 @@ Remember that
 * uppercase letters wrap around the alphabet to uppercase letters
 * lowercase letters wrap always to lowercase letters
 * non-letters do not wrap at all! 
+
 
 ###Hints, part 1... Write `rot(c,n)`!
 
@@ -83,7 +104,7 @@ Some encipher examples:
 
 ##Function to write #2: `decipher( S )`
 
-On the other hand, `decipher( S )` will be given a string of English text already shifted by some amount. Then, `decipher` should return, to the best of its ability, the _original_ English string, which will be some rotation (possibly `0`) of the input `S`.
+On the other hand, `decipher( S )` will be given a string of English text already shifted by some amount. Then, `decipher` should return, to the best of its ability, the _original_ English string, which will be some rotation (possibly `0`) of the input `S`. This means you will have to try each possible decoding and estimate how _English_ they are.
 
 **Note:** some strings have more than one English _deciphering._ What's more, it is difficult or impossible to handle very short strings correctly. Thus, your `decipher` function _does not have to be perfect_. However, it should work almost all of the time on long stretches of English text, e.g., sentences of 8+ words. On a single word or short phrase, you will not lose any credit for not getting the correct deciphering!
 
@@ -93,13 +114,17 @@ Hints:
   
     L = [    __________        for n in range(26) ]
   
-* Then, you will want to use the `LoL` _list of lists_ technique in which each element of `L` gets a score. You might want to look back at how that worked...
+* Then, you can use the `LoL` _list of lists_ technique in which each element of `L` gets a score. It might look something like this:
   
-    LoL = [    __________        for x in L ]
+    LoL = [[    __________    for letter in encoding] for encoding in L ]
   
 * It's entirely up to you how you might want to score _Englishness._ See below for some starting points... .
 
-One approach you could try is to use letter frequencies -- a function providing those frequencies is provided below -- feel free to cut-and-paste it into your HW file. Scrabble scores have also been suggested in the past...! You're welcome to use some additional _heuristics_ (rules of thumb) of your own design. Also, you are welcome to write one or more small _helper_ functions that will assist in writing `decipher`.
+One approach you could try is to use letter frequencies, meaning you compute how often each letter occurs in the text. This is a method often used in breaking classical ciphers. In any given stretch of written language, certain letters and combinations of letters occur with varying frequencies. Moreover, there is a characteristic distribution of letters that is roughly the same for almost all samples of that language. For instance, given a section of English language, E, T, A and O are the most common, while Z, Q and X are rare. 
+
+![Letter frequencies](frequency.png)
+
+You could, for example, use this information to count the number of times the top 5 most used letters (e,t,a,o,i) occur in each decryption, assuming that the correct english text should contain the most of these letters. You could also do something more complex, like using the frequency (or probability) of each letter to compute the probability the text is actual English. Or you could even compute a distribution of frequencies for each of your decryptions and see which one matches the best. A function providing those frequencies is provided below -- feel free to cut-and-paste it into your HW file. You're welcome to use some additional _heuristics_ (rules of thumb) of your own design. Also, you are welcome to write one or more small _helper_ functions that will assist in writing `decipher`.
 
 However you approach it, **be sure** to describe whatever strategies you used in writing your `decipher` function in a short comment above your `decipher` function.
 
@@ -121,39 +146,38 @@ Here is a letter-probability function and its source:
 
     # table of probabilities for each letter...
     def letProb( c ):
-        """ if c is the space character or an alphabetic character,
+        """ if c is an alphabetic character,
         we return its monogram probability (for english),
         otherwise we return 1.0 We ignore capitalization.
         Adapted from
-        http://www.cs.chalmers.se/Cs/Grundutb/Kurser/krypto/en_stat.html
+        http://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html
         """
-        if c == ' ': return 0.1904
-        if c == 'e' or c == 'E': return 0.1017
-        if c == 't' or c == 'T': return 0.0737
-        if c == 'a' or c == 'A': return 0.0661
-        if c == 'o' or c == 'O': return 0.0610
-        if c == 'i' or c == 'I': return 0.0562
-        if c == 'n' or c == 'N': return 0.0557
-        if c == 'h' or c == 'H': return 0.0542
-        if c == 's' or c == 'S': return 0.0508
-        if c == 'r' or c == 'R': return 0.0458
-        if c == 'd' or c == 'D': return 0.0369
-        if c == 'l' or c == 'L': return 0.0325
-        if c == 'u' or c == 'U': return 0.0228
-        if c == 'm' or c == 'M': return 0.0205
-        if c == 'c' or c == 'C': return 0.0192
-        if c == 'w' or c == 'W': return 0.0190
-        if c == 'f' or c == 'F': return 0.0175
-        if c == 'y' or c == 'Y': return 0.0165
-        if c == 'g' or c == 'G': return 0.0161
-        if c == 'p' or c == 'P': return 0.0131
-        if c == 'b' or c == 'B': return 0.0115
-        if c == 'v' or c == 'V': return 0.0088
-        if c == 'k' or c == 'K': return 0.0066
-        if c == 'x' or c == 'X': return 0.0014
-        if c == 'j' or c == 'J': return 0.0008
-        if c == 'q' or c == 'Q': return 0.0008
-        if c == 'z' or c == 'Z': return 0.0005
+        if c == 'e' or c == 'E': return 0.1202
+        if c == 't' or c == 'T': return 0.0910
+        if c == 'a' or c == 'A': return 0.0812
+        if c == 'o' or c == 'O': return 0.0768
+        if c == 'i' or c == 'I': return 0.0731
+        if c == 'n' or c == 'N': return 0.0695
+        if c == 's' or c == 'S': return 0.0628
+        if c == 'r' or c == 'R': return 0.0602
+        if c == 'h' or c == 'H': return 0.0592
+        if c == 'd' or c == 'D': return 0.0432
+        if c == 'l' or c == 'L': return 0.0398
+        if c == 'u' or c == 'U': return 0.0288
+        if c == 'c' or c == 'C': return 0.0271
+        if c == 'm' or c == 'M': return 0.0261
+        if c == 'f' or c == 'F': return 0.0230
+        if c == 'y' or c == 'Y': return 0.0211
+        if c == 'w' or c == 'W': return 0.0209
+        if c == 'g' or c == 'G': return 0.0203
+        if c == 'p' or c == 'P': return 0.0182
+        if c == 'b' or c == 'B': return 0.0149
+        if c == 'v' or c == 'V': return 0.0111
+        if c == 'k' or c == 'K': return 0.0069
+        if c == 'x' or c == 'X': return 0.0017
+        if c == 'q' or c == 'Q': return 0.0011
+        if c == 'j' or c == 'J': return 0.0010
+        if c == 'z' or c == 'Z': return 0.0007
         return 1.0
 
 
@@ -178,7 +202,7 @@ Here are some examples:
 
 ##Function to write #4: `gensort( L )`:  General-purpose sorting
 
-Use recursion to write a general-purpose sorting function `gensort( L )` which takes in a list `L` and should output a list with the same elements as `L`, but in ascending order. Feel free to use the `max` function built-in to Python (or `min` if you prefer). Recursion -- that is, sorting the _rest_ of the list -- will help, too.
+Use recursion to write a general-purpose sorting function `gensort( L )` which takes in a list `L` and should output a list with the same elements as `L`, but in ascending order. Feel free to use the [max](https://docs.python.org/2/library/functions.html#max) function built-in to Python (or [min](https://docs.python.org/2/library/functions.html#min) if you prefer) and the list [remove](https://docs.python.org/2/tutorial/datastructures.html) function. Recursion -- that is, sorting the _rest_ of the list -- will help, too.
 
 Here are some examples:
 
