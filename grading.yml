@@ -1,0 +1,46 @@
+formulas:
+    hw2: (scope * correctness / 25.0 * 9 + 1).round(1)
+    hw3: (scope * (3 * correctness + 3 * style) / 150.0 * 9 + 1).round(1)
+    hw4: (scope * (3 * correctness + 3 * style) / 150.0 * 9 + 1).round(1)
+    hw5: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+    hw6: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+    hw7: (scope * (3 * correctness + 2 * design + 1 * style) / 150.0 * 9 + 1).round(1)
+
+calculation:
+    resit:
+        resit: 0
+        psets: 100
+        passes: 0
+    normal:
+        quiz: 0
+        psets: 100
+        passes: 0
+
+passes:
+    type: pass
+    grades:
+        lab1: 1
+        hw1: 1
+
+psets:
+    type: float
+    drop: correctness
+    grades:
+        hw2: 1
+        hw3: 1
+        hw4: 1
+        hw5: 1
+        hw6: 1
+        hw7: 1
+
+quiz:
+    type: pass
+    required: true
+    grades:
+        quiz: 1
+
+resit:
+    type: pass
+    required: true
+    grades:
+        resit: 1
