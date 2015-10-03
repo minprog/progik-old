@@ -26,8 +26,9 @@ works if the key is in the dictionary; otherwise, we get a `KeyError`. To avoid
 this, we can use the call `hand.get('a', 0)`. This is the safe way to access a
 value if we are not sure the key is in the dictionary.
 
-`d.get(key, default)` returns the value for `key` if key is in the dictionary
-`d`, else `default`. If `default` is not given, it returns `None`, so that this
+`d.get(key, default)` [link](https://docs.python.org/2/library/stdtypes.html#dict.get) 
+returns the value for `key` if key is in the dictionary `d`, else it returns the 
+`default` parameter. If `default` is not provided, it returns `None`. Thus this 
 method never raises a `KeyError`.
 
 ## Problem 2: Removing letters from a hand
@@ -129,7 +130,7 @@ Case #2
 
     Total score: 46 points.
 
-## 6. Playing a game
+## Problem 5: Playing a game
 
 A game consists of playing multiple hands. We need to implement one final
 function to complete our word-game program. Write the code that implements the
