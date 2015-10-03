@@ -6,7 +6,8 @@ This week's reading is two short articles about computer models of complex pheno
 ## The articles
 
 [Not-so-smart Cities](http://www.nytimes.com/2011/09/25/opinion/sunday/not-so-smart-cities.html) ( NYTimes, 9/25/11 ) [Here is a local pdf](not-so-smart-cities.pdf)
-[Earthquakes on Wall Street (pdf)](earthquakes.pdf) ( InsideScience.org, 12/14/09 ) (this is a pdf of that article) 
+
+[Earthquakes on Wall Street (pdf)](earthquakes.pdf) ( InsideScience.org, 12/14/09 ) (this is a pdf of that article)
 
 
 ## The Questions (choose 1 to answer)
