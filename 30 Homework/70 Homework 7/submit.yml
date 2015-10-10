@@ -1,0 +1,4 @@
+name: hw7
+required:
+  - hw7pr0.txt
+  - conway.py
