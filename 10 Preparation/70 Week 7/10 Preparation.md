@@ -24,3 +24,30 @@ simply open the Python shell and try to import it
 
 If this doesn't produce errors, then everything works!
 
+### Mac
+
+<http://stackoverflow.com/a/32027798>
+
+Install homebrew:
+
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Install the libraries you need:
+
+    brew install sdl sdl_ttf sdl_image sdl_mixer portmidi
+
+ONLY if you have Anaconda:
+
+    conda install binstar
+    conda install anaconda-client  (only if previous gives error!)
+    conda install -c https://conda.binstar.org/quasiben pygame
+
+ONLY if you have NO Anaconda or Anaconda fails:
+
+    brew install python
+    pip install binstar
+
+Then install Pygame from the website: <http://www.pygame.org/ftp/pygame-1.9.2pre-py2.7-macosx10.7.mpkg.zip>
+
+Installation will fail but it will work (I hope!).
+
