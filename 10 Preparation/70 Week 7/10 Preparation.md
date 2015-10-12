@@ -51,3 +51,10 @@ Then install Pygame from the website: <http://www.pygame.org/ftp/pygame-1.9.2pre
 
 Installation will fail but it will work (I hope!).
 
+### Virtual Machine
+
+Go to <https://datanose.nl/#byod> and download VMware.
+
+Go to <https://manual.cs50.net/appliance/2014/fusion/> for MAC.
+
+Go to <https://manual.cs50.net/appliance/2014/workstation/> for WINDOWS.
