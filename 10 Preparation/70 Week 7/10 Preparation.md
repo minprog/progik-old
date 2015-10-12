@@ -58,3 +58,11 @@ Go to <https://datanose.nl/#byod> and download VMware.
 Go to <https://manual.cs50.net/appliance/2014/fusion/> for MAC.
 
 Go to <https://manual.cs50.net/appliance/2014/workstation/> for WINDOWS.
+
+In the Appliance, at the Terminal, enter:
+
+    sudo apt-get install python-pygame
+
+You will now have a working Pygame. If things do not install, please first run the updater:
+
+    update50
