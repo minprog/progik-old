@@ -8,4 +8,4 @@ Anything in readings, labs and homework from weeks 1 through 7 can be on the qui
 
 Also, to prepare well, you might have a try at this sample quiz:
 
-- [Questions](proeftentamen+2015.pdf)
+- [Questions](proeftentamen 2015.pdf)
