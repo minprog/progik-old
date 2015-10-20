@@ -24,7 +24,7 @@ passes:
 
 psets:
     type: float
-    drop: correctness
+    drop: scope
     grades:
         hw2: 1
         hw3: 1
