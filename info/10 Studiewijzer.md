@@ -1,20 +1,23 @@
 # Programmeren voor Informatiekunde
 
-*Versie: September 2015 versie 0*
+*Versie: September 2016 versie 0*
 
 In deze cursus leer je over programmeren. Je krijgt een stevige basis in Python, zodat je in vervolgcursussen en na je studie goed uit de voeten kunt met het maken van prototypes. Je oefent veel met dataverwerking. Ondertussen krijg je ook de basis van informatica mee, zodat je breed georiënteerd bent en stevig in je schoenen staat als je in een team gaat werken aan het ontwikkelen van interactieve systemen.
 
 ## Contact
 
-Stuur een mail naar <progik@mprog.nl> of spreek je assistent of docenten aan. Voor uitzonderingen
-en afspraken moet je normaliter altijd een mail sturen.
+Stuur een mail naar <progik@mprog.nl> of spreek je assistent of docenten aan.
+Voor uitzonderingen en persoonlijke afspraken moet je altijd een mail sturen.
 
 Martijn Stegeman  
-*docent*  
-telefoon: (020) 525 5235
+*coördinator*  
+mail: <stegeman@uva.nl>
+
+Bob Diertens  
+*docent*
 
 Tim Doolan  
-*hoofdassistent*
+*docent*
 
 ## Leerdoelen
 
