@@ -1,6 +1,6 @@
 # Programmeren voor Informatiekunde
 
-*Versie: September 2016 versie 0*
+*Versie: September 2016*
 
 In deze cursus leer je over programmeren. Je krijgt een stevige basis in Python, zodat je in vervolgcursussen en na je studie goed uit de voeten kunt met het maken van prototypes. Je oefent veel met dataverwerking. Ondertussen krijg je ook de basis van informatica mee, zodat je breed georiënteerd bent en stevig in je schoenen staat als je in een team gaat werken aan het ontwikkelen van interactieve systemen.
 
