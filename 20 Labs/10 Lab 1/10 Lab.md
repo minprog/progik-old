@@ -25,26 +25,6 @@ Correctness
 
 All students must ordinarily submit this and all other labs and homeworks to be eligible for a satisfactory grade unless granted an exception in writing by the course's heads.
 
-## 1001000 1001001
-
-First curl up with Nate's short on binary, if not too familiar:
-
-![embed](https://www.youtube.com/embed/hacBFrgtQjQ?showinfo=0)
-
-And then with Nate's short on ASCII:
-
-![embed](https://www.youtube.com/embed/UPlR4eMMCmI?showinfo=0)
-
-Consider these questions rhetorical for now, but odds are they'll come up again! Not to worry if the answers aren't obvious at first. They're meant to induce a bit of thought! Week 0's first lecture and Nate's videos should provide you with the building blocks (daresay inputs!) with which to solve these problems.
-
-* How do you represent the (decimal) integer 50 in binary?
-* How many bits must be "flipped" (i.e., changed from 0 to 1 or from 1 to 0) in order to capitalize a lowercase `a` that's represented in ASCII?
-* How do you represent the (decimal) integer 50 in, oh, "hexadecimal," otherwise known as "base-16"? Know that decimal is considered "base-10" (since it employs 10 digits, 0 through 9), and binary is considered "base-2" (since it employs 2 digits, 0 and 1). Infer from those base systems how to represent base-16! (We'll see base-16 again in the context of graphics and web design.)
-
-Incidentally, you might enjoy this tour by [Prof. Harry Lewis](http://lewis.seas.harvard.edu/) of  the [Harvard Mark I](http://en.wikipedia.org/wiki/Harvard_Mark_I), one of the world's earliest (electro-mechanical) computers, whose purpose was, well, to compute (albeit slowly by today's standards)!
-
-![embed](https://www.youtube.com/embed/4ObouwCHk8w?showinfo=0)
-
 ## Itching to Program?
 
 Next head to <http://scratch.mit.edu/> and sign up for an account on MIT's
