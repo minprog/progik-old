@@ -17,11 +17,11 @@ vragen met je assistent of de docent.
 
 ## Labs
 
-Tijdens de eerste drie weken van het vak volg je *workshops* waarin je met
-redelijk kleine opdrachten de basis van Python en programmeren leert. Je laat
-het eindresultaat zien aan de assistent, die je code bekijkt en wat feedback
-geeft, en vervolgens je opdracht aftekent. De assistent geeft feedback over de
-rubrieken zoals hieronder vermeld onder "Problem Sets".
+Tijdens het eerste practicum van de week krijg je de kans om aan de lab opdracht
+van die week te werken. Deze stof geeft je een basis voor de huiswerkopgave van
+die week. Het resultaat hiervan moet je aan het eind van de week inleveren samen
+met je huiswerk. De assistent geeft feedback over de
+rubrieken zoals hieronder vermeld onder "Beoordeling".
 
 ## Huiswerk
 
@@ -43,7 +43,7 @@ dan ook niet direct de bedoeling of mogelijk.
 
 ### Deadline
 
-De wekelijkse deadline is vrijdag om 15:00 uur. Mis je de deadline, dan hebben wij geen tijd meer
+De wekelijkse deadline is vrijdag om 23:59 uur. Mis je de deadline, dan hebben wij geen tijd meer
 om het na te kijken en wordt het lastig het vak nog te halen. Stuur daarom altijd in wat je hebt.
 
 ## Tentamen

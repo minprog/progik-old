@@ -45,15 +45,14 @@ We willen graag dat je leert om snel prototypes te maken van programma's, zodat 
   
 * We verwachten dat je je uiterste best doen om ten minste alle opdrachten volledig te proberen te maken. Dit vinden we belangrijker dan dat alles precies correct werkt.
 
-* We verwachten dat je 2 uur per week aanwezig bent bij je werkcollege en dan nog 6 uur bij de
-  computerpractica. Mocht je een practicum missen door ziekte, dan is er een mogelijkheid tot
-  inhalen op donderdag (alleen bij tijdige ziekmelding).
+* We verwachten dat je 6 uur per week aanwezig bent bij je computerpractica. Mocht je een practicum missen door ziekte, dan is er een mogelijkheid tot
+  inhalen op vrijdag (alleen bij tijdige ziekmelding).
 
   Als je uitstekend werk levert en vroeg klaar bent, kun je de staf verzoeken om vrijstelling van
   de aanwezigheidsverplichting. Je moet daarvoor je opdrachten van de week aan je werkgroep-assistent laat zien.
   Als de assistent je opdrachten goedkeurt, krijg je vrijstelling voor de rest van de werkcolleges van de week.
   
-* We verwachten dat je, als het nodig is, op donderdag naar het laatstekanspracticum komt. De staf kan je hiervoor, in goed overleg, uitnodigen.
+* We verwachten dat je, als het nodig is, op vrijdag naar het laatstekanspracticum komt. De staf kan je hiervoor, in goed overleg, uitnodigen.
 
 * We verwachten dat je de feedback over je opdrachten gebruikt om de opdrachten van de volgende
   week beter te maken, zodat je niet alleen leert programmeren, maar ook goed programmeren.

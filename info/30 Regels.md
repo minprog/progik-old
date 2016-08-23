@@ -11,7 +11,7 @@ van je medestudenten, of van internet, over te nemen.
 
 Een belangrijk verschil dus: je kunt discussiëren over de manier waarop je een
 probleem aanpakt, maar je kopieert nooit code van anderen. Om het jezelf
-moeilijk te maken kun je dus doorgaans ook niet op het scherm van een ander.
+niet moeilijk te maken kijk je dus doorgaans ook niet op het scherm van een ander.
 
 Als je merkt dat je zodanig aan het overleggen bent dat je dezelfde code krijgt
 als de student die naast je zit, wordt het tijd om te stoppen en de assistent om
