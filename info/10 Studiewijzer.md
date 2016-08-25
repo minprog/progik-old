@@ -17,7 +17,7 @@ Bob Diertens
 *docent*
 
 Tim Doolan  
-*docent*
+*docent*  
 mail: <t.f.doolan@uva.nl>
 
 ## Leerdoelen
