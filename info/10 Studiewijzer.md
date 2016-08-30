@@ -48,6 +48,8 @@ Na deze cursus:
 
 ## Verwachtingen
 
+Om deze cursus te kunnen halen, verwachten we een aantal dingen van je.
+
 * We verwachten dat je altijd vóór de eerste bijeenkomst van de week je huiswerk hebt gedaan en dat je je vragen bespreekt met je assistent.
   
 * We verwachten dat je je uiterste best doen om ten minste alle opdrachten volledig te proberen te maken. Dit vinden we belangrijker dan dat alles precies correct werkt.
