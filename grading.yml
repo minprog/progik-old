@@ -2,7 +2,12 @@ grades:
     lab1:
         type: pass
     hw1:
-        type: pass
+        type: float
+        subgrades:
+            scope: integer
+            correctness: integer
+        calculation: (scope * correctness / 25.0 * 9 + 1).round(1)
+        hide_calculated: true
     hw2:
         type: float
         subgrades:
