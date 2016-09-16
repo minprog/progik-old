@@ -146,6 +146,23 @@ Answer to example problem: Copy the following solution (after a few blank lines 
         """
         return 3*x
 
+## Testing your own functions
+
+You can test your own functions using the test code from part 1. Use the command:
+
+    python check hw3pr2
+
+Make sure the `check` folder and your `hw3pr2` are in the same folder. If your code
+correctly contains the example above, you should see the following output:
+
+    :) correct outputs for the function dbl()
+    :( correct outputs for the function sq()
+    :( correct outputs for the function interp()
+    :( correct outputs for the function checkends()
+    :( correct outputs for the function flipside()
+    :( correct outputs for the function convertFromSeconds()
+    :( correct outputs for the function front3()
+
 ## The functions to write...
 
 **1.** Write `sq(x)`, which takes in a number named `x` as input. Then, `sq` should output the square of its input.

@@ -199,6 +199,35 @@ The problems:
 3. Use `pi` and/or `e` to create the list `[1,4,1,5,9]`. Store this list in the variable answer3.
 4. Use `pi` and/or `e` to create the list `[1,2,3,4,5]`. Store this list in the variable answer4.
 
+## Testing your code!
+
+For this week we have written some automated tests for `hw3pr1.py` , `hw3pr2.py` and `hw3pr3.py` .
+This code will automatically check if your code file works for all the tests described in
+the assignment. Of course it is still useful to still try the tests on your own as well, but
+this will give you a nice a final check.
+
+[Download the files here](week3_tests.zip)
+
+Put the folder `check` in the same folder as your `hw3pr1.py` file. You can then run the tests
+using:
+    
+    python check hw3pr1
+
+and if all your first 5 answers are correct, you should get output like:
+
+    :) correct output for answer0
+    :) correct output for answer1
+    :) correct output for answer2
+    :) correct output for answer3
+    :) correct output for answer4
+    :( correct output for answer5
+    :( correct output for answer6
+    :( correct output for answer7
+    :( correct output for answer8
+    :( correct output for answer9
+    :( correct output for answer10
+
+
 ## Practicing with strings
 
 This problem continues in the style of the last one, but uses strings rather than lists. First, copy these strings into your `hw3pr1.py` file underneath the previous problems (with some blank lines to keep things apart!):
@@ -249,3 +278,6 @@ Remember that the "most efficient answers" are not at all needed (they may be fu
 
 
 If you have gotten to this point, you have completed the first half of Lab 1! 
+
+**Make sure to run the tests again to see all your answers are correct**
+
