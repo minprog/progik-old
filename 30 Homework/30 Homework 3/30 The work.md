@@ -22,7 +22,7 @@ Here is a little bit of code to paste, if you'd like to use it to get started:
     #
     # mylen example from class
     #
-    def mylen( s ):
+    def mylen(s):
         """ mylen outputs the length of s
                   input: s, which can be a string or list
 
@@ -30,7 +30,7 @@ Here is a little bit of code to paste, if you'd like to use it to get started:
         if s == '' or s == []:   # if empty string or empty list
             return 0
         else:
-            return 1 + mylen( s[1:] )
+            return 1 + mylen(s[1:])
 
 Please put all of your functions for this problem in this *single* `hw3pr3.py` file, and start your file with a comment that includes your name, the starting date, and the assignment/problem name - all good things to have in each of your source-code files! All of the parts (functions) of this problem will be submitted in that single file.
 
@@ -47,7 +47,7 @@ For this homework, the `mult`, `dot`, `ind`, `scrabbleScore`, and `transcribe` f
     # power example 
     #
 
-    def power( b, p ):
+    def power(b, p):
         """ power outputs b**p via recursion
                   input: b, a number
                   input: p, an integer
@@ -63,7 +63,7 @@ For this homework, the `mult`, `dot`, `ind`, `scrabbleScore`, and `transcribe` f
     # mylen example 
     #
 
-    def mylen( s ):
+    def mylen(s):
         """ mylen outputs the length of s
                   input: s, which can be a string or list
 
@@ -71,22 +71,22 @@ For this homework, the `mult`, `dot`, `ind`, `scrabbleScore`, and `transcribe` f
         if s == '' or s == []:   # if empty string or empty list
             return 0
         else:
-            return 1 + mylen( s[1:] )
+            return 1 + mylen(s[1:])
 
     #
     # sajak example 
     #
 
-    def sajak( s ):
+    def sajak(s):
         """ sajak outputs the number of vowels in s
                   input: s, which will be a string
         """
         if s == '':
             return 0   # no vowels in the empty string
         elif s[0] in 'aeiou':
-            return 1 + sajak( s[1:] )
+            return 1 + sajak(s[1:])
         else:
-            return 0 + sajak( s[1:] )
+            return 0 + sajak(s[1:])
 
     #
     # mymax example 
@@ -99,9 +99,9 @@ For this homework, the `mult`, `dot`, `ind`, `scrabbleScore`, and `transcribe` f
         if len(L) == 1:
             return L[0]
         elif L[0] < L[1]:
-            return mymax( L[1:] )    # drop the first
+            return mymax(L[1:])    # drop the first
         else:
-            return mymax( L[0:1] + L[2:] )  # drop the second
+            return mymax(L[0:1] + L[2:])  # drop the second
 
 ## Visualize recursion!
 
@@ -109,13 +109,13 @@ Some people have used [this online Python visualizer](http://www.pythontutor.com
 
 Here is an example that shows how to use the online Python visualizer to test `mylen( 'cs5' )`. Paste this code into the visualizer linked above:
 
-    def mylen( s ):
+    def mylen(s):
         if s == '':
             return 0
         else:
-            return 1 + mylen( s[1:] )
+            return 1 + mylen(s[1:])
     
-    test = mylen( 'cs5' )
+    test = mylen('cs5')
     print 'test is', test
 
 You can adapt this for other examples from class or from your own code, as well... . Try it!
@@ -125,7 +125,7 @@ You can adapt this for other examples from class or from your own code, as well.
 
 Also, for each function be sure to include a docstring that indicates what the function's inputs mean and what its output means, i.e., what the function "does." (Omitting a docstring typically results in the function being "doc'ed" a couple of points!) Here's an example of a docstring, thorough if a bit verbose, that you are welcome to use for mult and as a template for the others:
 
-    def mult( n, m ):
+    def mult(n, m):
         """ mult returns the product of its two inputs
                 inputs: n and m are both integers
                 output: the result upon multiplying n and m
@@ -181,11 +181,11 @@ If you have included the example function `mylen(s)` from above, you should see 
 
 ## The functions to write...
 
-First, write `mult( n, m )`. Here is a full description of how it should work: 
+First, write `mult(n, m)`. Here is a full description of how it should work: 
 
-`mult( n, m )` should output the product of the two integers n and m. Since this would be a bit too easy if the multiplication operator * were used, for this function, you are limited to using addition/subtraction/negation operators, along with recursion. (Use the `power` function above as a guide.) Some examples:
+`mult(n, m)` should output the product of the two integers n and m. Since this would be a bit too easy if the multiplication operator * were used, for this function, you are limited to using addition/subtraction/negation operators, along with recursion. (Use the `power` function above as a guide.) Some examples:
 
-    >>> mult( 6, 7 )
+    >>> mult(6, 7)
     42
 
     >>> mult( 6, -3 )
@@ -204,21 +204,21 @@ Here are the tests to try:
     print "mult(0,7)     0 ==", mult(0,7)
     print "mult(0,0)     0 ==", mult(0,0)
 
-Next, write `dot( L, K )`. Here is this function's description: 
+Next, write `dot(L, K)`. Here is this function's description: 
 
-`dot( L, K )` should output the dot product of the lists L and K. If these two input lists are not of equal length, dot should output 0.0. If these two lists are both empty, dot also should output 0.0. You should assume that the input lists contain only numeric values. (Compare this with the mylen example we did in class, but be sure to account for both lists -- and remember they're lists, not strings...! Use the `mylen` example, modified slightly to handle both lists and strings!
+`dot(L, K)` should output the dot product of the lists L and K. If these two input lists are not of equal length, dot should output 0.0. If these two lists are both empty, dot also should output 0.0. You should assume that the input lists contain only numeric values. (Compare this with the mylen example we did in class, but be sure to account for both lists -- and remember they're lists, not strings...! Use the `mylen` example, modified slightly to handle both lists and strings!
 
 *What's the dot product?*    The dot product of two vectors or lists is the sum of the products of the elements in the same position in the two vectors. for example, the first result is 5\*6 plus 3\*4, which is 42. The result here is `42.0`, because we used a float of 0.0 in the base case... .
 
 You're welcome to use the multiplication operator * for this problem, for sure!
 
-        >>> dot( [5,3], [6,4] )
+        >>> dot([5,3], [6,4])
         42.0
 
-        >>> dot( [1,2,3,4], [10,100,1000,10000] )
+        >>> dot([1,2,3,4], [10,100,1000,10000])
         43210.0
 
-        >>> dot( [5,3], [6] )
+        >>> dot([5,3], [6])
         0.0
 
 Here are the tests to try:
@@ -226,13 +226,13 @@ Here are the tests to try:
     #
     # Tests
     #
-    print "dot( [5,3], [6,4] )     42.0 ==", dot( [5,3], [6,4] ) 
-    print "dot( [1,2,3,4], [10,100,1000,10000] )  43210.0 ==", dot( [1,2,3,4], [10,100,1000,10000] ) 
-    print "dot( [5,3], [6] )        0.0 ==", dot( [5,3], [6] ) 
-    print "dot( [], [6] )           0.0 ==", dot( [], [6] ) 
-    print "dot( [], [] )            0.0 ==", dot( [], [6] ) 
+    print "dot([5,3], [6,4])     42.0 ==", dot([5,3], [6,4]) 
+    print "dot([1,2,3,4], [10,100,1000,10000])  43210.0 ==", dot([1,2,3,4], [10,100,1000,10000]) 
+    print "dot([5,3], [6])        0.0 ==", dot([5,3], [6]) 
+    print "dot([], [6])           0.0 ==", dot([], [6]) 
+    print "dot([], [])            0.0 ==", dot([], [6]) 
 
-Next, write `ind( e, L )`. Here is its description: 
+Next, write `ind(e, L)`. Here is its description: 
 
 Write `ind(e, L)`, which takes in a sequence `L` and an element `e`. L might be a string or, more generally, a list. Your function ind should return the index at which e is first found in L. Counting begins at 0, as is usual with lists. If e is NOT an element of L, then ind(e, L) should return the integer equal to len(L). Here are a few examples:
 
@@ -273,10 +273,10 @@ Here are the tests to try:
     print "ind('i', 'team')                       4 ==", ind('i', 'team')
     print "ind(' ', 'outer exploration')          5 ==", ind(' ', 'outer exploration')
 
-Next, write `letterScore( let )`. (Watch for capitalization!) Here is its description: 
+Next, write `letterScore(let)`. (Watch for capitalization!) Here is its description: 
 
 
-`letterScore( let )` should take as input a single-character string and produce as output the value of that character as a scrabble tile. If the input is not one of the letters from 'a' to 'z', the function should return 0.
+`letterScore(let)` should take as input a single-character string and produce as output the value of that character as a scrabble tile. If the input is not one of the letters from 'a' to 'z', the function should return 0.
 
 To write this function you will need to use this mapping of letters to scores
 
@@ -308,9 +308,9 @@ Here are some examples of letterScore in action:
 
 *Tests?*   Try this one yourself... it will be more formally tested in conjunction with the next function!
 
-Next, write `scrabbleScore( S )`. (Again, watch for capitalization!) Here is scrabbleScore's description: 
+Next, write `scrabbleScore(S)`. (Again, watch for capitalization!) Here is `scrabbleScore`'s description: 
 
-`scrabbleScore( S )` should take as input a string `S`, which will have only lowercase letters, and should return as output the scrabble score of that string. Ignore the fact that, in reality, the availability of each letter tile is limited. Hint: use the above `letterScore` function and recursion. (Compare this with the the `sajak` example, but consider adding different values for each letter.
+`scrabbleScore(S)` should take as input a string `S`, which will have only lowercase letters, and should return as output the scrabble score of that string. Ignore the fact that, in reality, the availability of each letter tile is limited. Hint: use the above `letterScore` function and recursion. (Compare this with the the `sajak` example, but consider adding different values for each letter.
 
 Here are some examples:
 
@@ -333,13 +333,13 @@ Here are the tests to try:
     print "scrabbleScore('?!@#$%^&*()'):  0 ==", scrabbleScore('?!@#$%^&*()')
     print "scrabbleScore(''):          0 ==", scrabbleScore('')
 
-Finally, write `transcribe( S )`. Here is its description: 
+Finally, write `transcribe(S)`. Here is its description: 
 
-`transcribe( S )`
+`transcribe(S)`
 
 *DNA -> RNA transcription*    In an incredible molecular feat called transcription, your cells create molecules of messenger RNA that mirror the sequence of nucleotides in your DNA. The RNA is then used to create proteins that do the work of the cell. 
 
-Write a recursive function `transcribe( S )`, which should take as input a string `S`, which will have DNA nucleotides (capital letter As, C, Gs, and Ts). There may be other characters, too, though they will be ignored by your transcribe function -- these might be spaces or other characters that are not really DNA nucleotides. 
+Write a recursive function `transcribe(S)`, which should take as input a string `S`, which will have DNA nucleotides (capital letter As, C, Gs, and Ts). There may be other characters, too, though they will be ignored by your transcribe function -- these might be spaces or other characters that are not really DNA nucleotides. 
 
 Then, transcribe should return as output the messenger RNA that would be produced from that string `S`. The correct output simply uses replacement:
 
@@ -351,7 +351,7 @@ Then, transcribe should return as output the messenger RNA that would be produce
 
 As above, you will want a helper function that converts one nucleotide. Feel free to use this as a start for this helper function: 
 
-    def one_dna_to_rna( c ):
+    def one_dna_to_rna(c):
         """ converts a single-character c from DNA
             nucleotide to complementary RNA nucleotide """
         if c == 'A': return 'U'
@@ -359,7 +359,7 @@ As above, you will want a helper function that converts one nucleotide. Feel fre
 
 You'll want to adapt the `sajak` example, but adding together strings, instead of numbers!
 
-Here are some examples of transcribe:
+Here are some examples of `transcribe`:
 
     >>> transcribe('ACGT TGCA')
     'UGCAACGU'
@@ -368,12 +368,12 @@ Here are some examples of transcribe:
     >>> transcribe('cs5')   # lowercase doesn't count
     ''
 
-*Not quite working?*    One common problem that can arise is that one_dna_to_rna lacks an else case to capture all of the non-legal characters. Since all non-nucleotide characters should be dropped, this can be fixed by include code similar to this:
+*Not quite working?*    One common problem that can arise is that `one_dna_to_rna` lacks an else case to capture all of the non-legal characters. Since all non-nucleotide characters should be dropped, this can be fixed by include code similar to this:
 
     else:
         return ''     # return the empty string if it's not a legal nucleotide
 
-There are different ways around this, too, but this is one problem that has appeared a few times... . Note that the else above is only for one_dna_to_rna, not for transcribe itself. 
+There are different ways around this, too, but this is one problem that has appeared a few times... . Note that the else above is only for `one_dna_to_rna`, not for `transcribe` itself. 
 Here are the tests to paste and try - note that the right sides won't have quotes...:
 
     #

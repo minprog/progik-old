@@ -257,7 +257,7 @@ Examples:
 
 Hint: This function is simpler if you create a variable equal to `len(s)/2` on the first line, e.g.,
 
-    def flipside( s ):
+    def flipside(s):
         """ put your docstring here
         """
         x = len(s)/2
@@ -291,7 +291,7 @@ For instance,
 
 How to do this?    Feel free to copy-and-paste this starter code that uses four variables:
 
-    def convertFromSeconds( s ):
+    def convertFromSeconds(s):
         days = s / (24*60*60)  # # of days
         s = s % (24*60*60)     # the leftover
         hours = 
