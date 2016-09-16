@@ -162,8 +162,22 @@ Here's an example using the flipside(s) function from Lab 1. Paste this into you
     print "flipside('a')                a ==", flipside('a')
     print "flipside('')                   ==", flipside('')
 
-Be sure to paste the tests for the functions below, too - and run them!
+Be sure to paste the tests for the functions below, too - and run them! Running these tests
+will help you see what cases your code passes and fails. These functions can also be given
+a final test with the check tests. Run them as below:
 
+    python check hw3pr3
+
+If you have included the example function `mylen(s)` from above, you should see the following output:
+
+    :) correct outputs for the function mylen()                          
+    :( correct outputs for the function mult()                           
+    :( correct outputs for the function dot()                            
+    :( correct outputs for the function ind()                            
+    :( correct outputs for the function letterScore()                    
+    :( correct outputs for the function one_dna_to_rna()
+    :( correct outputs for the function scrabbleScore()
+    :( correct outputs for the function transcribe()
 
 ## The functions to write...
 
