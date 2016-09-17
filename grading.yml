@@ -13,8 +13,7 @@ grades:
         subgrades:
             scope: integer
             correctness: integer
-            style: integer
-        calculation: (scope * (3 * correctness + 3 * style) / 150.0 * 9 + 1).round(1)
+        calculation: (scope * correctness / 25.0 * 9 + 1).round(1)
         hide_calculated: true
     hw3:
         type: float
