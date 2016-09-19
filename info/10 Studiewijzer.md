@@ -1,4 +1,4 @@
-# Programmeren voor Informatiekunde
+# Programmeren voor Informatiekunde<br><span class="small">Studiewijzer</span>
 
 *Versie: September 2016*
 
