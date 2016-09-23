@@ -2,7 +2,7 @@ name: hw4
 required:
     - hw4pr0.txt
     - hw4pr1.py
+    - hw4pr2.py
     - hw4pr3.py
 optional:
-    - hw4pr2.py
     - hw4pr4.py

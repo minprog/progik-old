@@ -3,16 +3,16 @@
 
 [35 points]
 
-For `hw4pr2.py` you will write Python functions to investigate the behavior of a sleepwalking student, a.k.a., a _random walk_.
+For `hw4pr3.py` you will write Python functions to investigate the behavior of a sleepwalking student, a.k.a., a _random walk_.
 
-You should place your functions in a file named `hw4pr2.py`.
+You should place your functions in a file named `hw4pr3.py`.
 
 ## Part 1: Copy this function `rs()`
 
 Start your file with this header and function, named rs()
 
     #
-    # hw4pr2.py
+    # hw4pr3.py
     #
     # Name:
     #
@@ -170,31 +170,31 @@ Adjust as you see fit!
 
 To analyze random walks, we need two terms:
 
-1. The **signed-displacement** is the number of steps _away from the start_ that the random walker has reached. It is signed, because displacements to the right are considered positive and displacements to the left are considered negative. This is natural: to find the signed displacement, simply subtract: it's the ending position of the random walker minus the starting position of the random walker.
+* The **signed-displacement** is the number of steps _away from the start_ that the random walker has reached. It is signed, because displacements to the right are considered positive and displacements to the left are considered negative. To find the signed displacement, simply subtract: it's the ending position of the random walker minus the starting position of the random walker.
   
-2. The **squared-displacement** is the square of the number of steps away from the start that the random walker has reached. That is, it is the square of the signed displacement. 
+* The **squared-displacement** is it is the square of the signed displacement. 
 
 With these two terms in mind, here are the two questions we ask you to investigate:
 
-* What is the average final _signed-displacement_ for a random walker after making `100` random steps? What about after `N` random steps? As described above, the signed-displacement is just the output of `rwpos` minus the `start` location. Do **not** use `abs`.
+1. What is the average final _signed-displacement_ for a random walker after making `100` random steps? What about after `N` random steps? As described above, the signed-displacement is just difference between the output of `rwpos` and the `start` location. Do **not** use `abs`.
   
-* What is the average _squared-displacement_ for a random walker after making `100` random steps? What about after `N` random steps, in terms of `N`? Be sure you square the signed displacements **before** you sum the values in order to average them! 
+2. What is the average _squared-displacement_ for a random walker after making `100` random steps? What about after `N` random steps, in terms of `N`? Be sure you square the signed displacements **before** you sum the values in order to average them! 
 
 You should adapt the random-walk functions you wrote to investigate these two questions. In particular, you should
 
-* **To-do item #1** Write a version of `rwpos` that does **not** print any debugging or explanatory information. Rather, it should simply return the final position. Call this new version `rwposPlain`. **Be careful!** the recursive call(s) will need to change so that they call `rwposPlain`, not `rwpos`!
+* **Step #1** Write a version of `rwpos` that does **not** print any debugging or explanatory information. Rather, it should simply return the final position. Call this new version `rwposPlain`. **Be careful!** the recursive call(s) will need to change so that they call `rwposPlain`, not `rwpos`!
   
-* **To-do item #2** Come up with a plan for how you will answer the two questions. This plan should include list comprehensions similar to the following:
+* **Step #2** Come up with a plan for how you will answer the two questions. This plan should include list comprehensions similar to the following:
    
-     LC = [ rwposPlain(0,100) for x in range(142) ]
+   `LC = [ rwposPlain(0,100) for x in range(142) ]`
      
-   Not surprisingly, the `142` is not important -- except when you want to find the _average_ of the values created! Use `sum`
+   The `142` is not important, it is just the number of times we repeat the `rwposPlain` step. It is only important when computing the _average_ of the values created! You can use the `sum` function to sum all the elements in a list.
   
-* **To-do item #3** To build intuition, run the above list comprehension at the Python `\>\>\>` prompt. Look at the resulting value of `LC` (there should be 142 elements). Also, find the average of `LC`.
+* **To-do item #3** To build intuition, run the above step in the Python interpreter (using `-i` when runing the file). Look at the resulting value of `LC` (there should be 142 elements). Also, find the average of `LC`.
   
 * **To-do item #4** Write two more functions:
-  * `ave_signed_displacement( numtrials )`, which should run `rwposPlain(0,100)` for `numtrials` times and return the average of the result. Adapt the above list comprehension to be the central part of your function!
-  * `ave_squared_displacement( numtrials )`, which should run `rwposPlain(0,100)` for `numtrials` times and return the average of the **squares** of the results! One way to do this is to create a slightly different list comprehension. Remember that `x\*\*2` is Python's way of squaring `x`. 
+  * `ave_signed_displacement(numtrials)`, which should run `rwposPlain(0, 100)` for `numtrials` times and return the average of the result. Adapt the above list comprehension to be the central part of your function!
+  * `ave_squared_displacement(numtrials)`, which should run `rwposPlain(0, 100)` for `numtrials` times and return the average of the **squares** of the results! One way to do this is to create a slightly different list comprehension. Remember that `x\*\*2` is Python's way of squaring `x`. 
   
 * Then, use your functions and reflect on the results you find from these computational tests. To do this, place your answers inside your python program file by either making them comments (using the `#` symbol) OR, **even easier**, including them in triple-quoted strings (since they can include newlines).
 
@@ -212,7 +212,7 @@ For example:
 
 Thus, your file should include
 
-* (1) answers to these two questions and how you approached them and
+* (1) answers to the 2 questions at the start of this part and how you approached them and
 * (2) the above Python functions, including `ave_signed_displacement( numtrials )` and `ave_squared_displacement( numtrials )`
 
 Make sure to include explanatory docstrings and comments for each function you write!
@@ -222,16 +222,4 @@ Please include any references you might have used - you're welcome to read all a
 However, you should feel free not to bother - whether your answers/analyses are correct or not will have _no effect_ on the grading of this Part 4 of this problem!
 
 Rather, it will be graded on whether your functions work as they should, whether they _would be helpful_ in answering those questions, and in the clarity and effectiveness of your write-up.
-
-
-## Part 5: Optional Ex.Cr. variations
-
-For up to +5ec points (optional), feel free to make variations in the ASCII wandering of your sleepwalker(s)...
-
-* For example, a particularly creative ASCII emoji or boundary might be worth +1 or +2 points.
-* A character that changes depending on whether it's moving left or right might be worth +2 or +3 points.
-* A separate rwsteps function that has more than one wanderer (perhaps interacting with each other) might be +3 or +4 points
-* Combining all of these or doing something totally crazy (2d, anyone?) might be +4 or +5 points ... 
-
-Be sure to add an clear and obvious comment bragging about your extras -- we don't want to miss them!
 

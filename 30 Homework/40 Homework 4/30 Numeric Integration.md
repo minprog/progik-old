@@ -16,10 +16,10 @@ Doing this, you'll
 
 ### Getting started...
 
-Start by creating a new file named `hw4pr3.py` and pasting into it this code:
+Start by creating a new file named `hw4pr2.py` and pasting into it this code:
 
     #
-    # hw4pr3.py 
+    # hw4pr2.py 
     # List comprehensions!
     #
     # Name:

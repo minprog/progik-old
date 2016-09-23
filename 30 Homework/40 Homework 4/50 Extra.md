@@ -1,7 +1,7 @@
 
 # Extra: More Turtle?!??
 
-For extra credit of up to +5 or +10 or more points, you're invited to design and implement your own Python turtle-based artwork...
+If you'd like an extra challenge, you're invited to design and implement your own Python turtle-based artwork...
 
 ## Your custom recursive design
 
@@ -16,7 +16,7 @@ Create a `hw4pr4.py` file in which to work
 
 We're _pining_ for some interesting variants. If you do add extra features to your tree -- or create any other work -- make sure to add a comment within your `hw4pr4.py` file explaining how to run your code... .
 
-Any composition is welcome. For full extra credit, there needs to be _some_ recursive function of your own design that contributes to your art, but it does **not** have to be entirely recursive... !
+Any composition is welcome. There needs to be _some_ recursive function of your own design that contributes to your art, but it does **not** have to be entirely recursive... !
 
 ## Other turtle capabilities
 
