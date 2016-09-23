@@ -38,13 +38,13 @@ If you use the library-import statement
 
 you can use the `random` library, but you will need to preface each call with the library's name:
 
-    random.choice( [-1,1] )
+    random.choice([-1,1])
 
 Another way to import libraries is to use
 
     from random import *
 
-In this case, you can simply type `choice( [-1,1] )` , which is a bit shorter.
+In this case, you can simply type `choice([-1,1])` , which is a bit shorter.
 
 A problem could arise if you had _another_ function named choice already. For the moment, that isn't a concern.
 
@@ -63,9 +63,9 @@ For this problem, string _multiplication_ is very useful. Here is a reminder:
 In this latter example, `' '*10` specified how much space to place between `'start|'` and `'|end'`.
 
 
-## Part 2: Write `rwpos( start, nsteps )`
+## Part 2: Write `rwpos(start, nsteps)`
 
-Next, write a function named `rwpos( start, nsteps )` which takes two inputs:
+Next, write a function named `rwpos(start, nsteps)` which takes two inputs:
 
 * an integer `start`, representing the starting position of our sleepwalker, and
 * a nonnegative integer `nsteps`, representing the number of random steps to take from this starting position. 
@@ -80,7 +80,7 @@ As part of your `rwpos` function, include a line of debugging code that prints w
 
 Remember that, because each step is random, the exact values your function produces will likely be different than these, though the overall behavior should be the same:    
 
-    >>> rwpos( 40, 4 )
+    >>> rwpos(40, 4)
     start is 40
     start is 41
     start is 42
@@ -88,7 +88,7 @@ Remember that, because each step is random, the exact values your function produ
     start is 42
     42
 
-    >>> rwpos( 40, 4 )    # won't be the same each time...
+    >>> rwpos(40, 4)    # won't be the same each time...
     start is 40
     start is 39
     start is 38
@@ -108,9 +108,9 @@ Even if you've used `while` or `for` loops in the past, for this problem we ask 
 These assignments are primarily to develop _design_ skills -- specifically, recursive design.
 
 
-## Part 3: Write `rwsteps( start, low, hi )`
+## Part 3: Write `rwsteps(start, low, hi)`
 
-Next, write `rwsteps( start, low, hi )` which takes three inputs:
+Next, write `rwsteps(start, low, hi)` which takes three inputs:
 
 * an integer `start`, representing the starting position of our sleepwalker,
 * an integer `low`, which will always be nonnegative, representing the smallest value our sleepwalker will be allowed to wander to, and
@@ -128,7 +128,7 @@ As an extra-credit challenge (a fun one), you might create a more elaborate slee
 
 **Examples** Here is a plain-wandering example, one with walls on either side; the specifics of spacing, walls, etc, are entirely up to you -- be creative!
 
-    >>> rwsteps( 10, 5, 15 )
+    >>> rwsteps(10, 5, 15)
         |     S     |
         |    S      |
         |   S       |
@@ -145,7 +145,7 @@ As an extra-credit challenge (a fun one), you might create a more elaborate slee
 
 **Hints:** this problem can be tricky because you are both adding a random step _and_ adding to the ongoing count of the total number of steps!
 
-One way to do this is to use the line `rest_of_steps = rwsteps( newstart, low, hi )` as the recursive call, with _an appropriate assignment to_ `newstart` on the line above it, and an appropriate use of `rest_of_steps` in the return value below it... .
+One way to do this is to use the line `rest_of_steps = rwsteps(newstart, low, hi)` as the recursive call, with _an appropriate assignment to_ `newstart` on the line above it, and an appropriate use of `rest_of_steps` in the return value below it... .
 
 **Recursion limit exceeded?** You can get more memory for recursion by adding these lines to the top of your file:
 
@@ -213,7 +213,7 @@ For example:
 Thus, your file should include
 
 * (1) answers to the 2 questions at the start of this part and how you approached them and
-* (2) the above Python functions, including `ave_signed_displacement( numtrials )` and `ave_squared_displacement( numtrials )`
+* (2) the above Python functions, including `ave_signed_displacement(numtrials)` and `ave_squared_displacement(numtrials)`
 
 Make sure to include explanatory docstrings and comments for each function you write!
 

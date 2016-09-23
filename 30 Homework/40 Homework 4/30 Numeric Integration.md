@@ -244,7 +244,7 @@ As these examples highlight, `integrate` does not return a list; it returns a si
     >>> integrate(dbl, 0, 10, 1000)
     99.9                        # rounded from 99.8999... (precise value: 100)
 
-    >>> integrate(sq,0,3,1000000)  # a million steps will give Python pause
+    >>> integrate(sq, 0, 3, 1000000)  # a million steps will give Python pause
     8.9999865000044963          # close! (precise value: 9.0)
 
     >>> integrate(math.sin, 0, math.pi, 1000)
@@ -254,7 +254,7 @@ Don't worry about small errors in the rightmost (least-significant) digits. They
 
 To get started, here is the _signature_ (the `def` line) and docstring for `integrate`. Feel free to use this:
 
-    def integrate(f,low,hi,N):
+    def integrate(f, low, hi, N):
         """ integrate returns an estimate of the definite integral
         of the function f (the first input)
         with lower limit low (the second input)
@@ -282,7 +282,7 @@ Some examples on how `sum` works:
     >>> sum([10, 4, 1])
     15
 
-    >>> sum(range(0,101))
+    >>> sum(range(0, 101))
     5050
 
 If your `integrate` function works, congratulations! You've built a general-purpose routine that can provide integrals for any computable function (including those for which there is no closed-form integral).
