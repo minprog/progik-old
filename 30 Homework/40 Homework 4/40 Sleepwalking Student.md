@@ -172,7 +172,7 @@ To analyze random walks, we need two terms:
 
 * The **signed-displacement** is the number of steps _away from the start_ that the random walker has reached. It is signed, because displacements to the right are considered positive and displacements to the left are considered negative. To find the signed displacement, simply subtract: it's the ending position of the random walker minus the starting position of the random walker.
   
-* The **squared-displacement** is it is the square of the signed displacement. 
+* The **squared-displacement** is the square of the signed displacement. 
 
 With these two terms in mind, here are the two questions we ask you to investigate:
 
