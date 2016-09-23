@@ -5,7 +5,7 @@
 
 ## Starter code
 
-In this lab you will build a Python program that can compute the areas underneath arbitrary mathematical functions... (mathematicians call these integrals...)
+For the first part of this homework you will build a Python program that can compute the areas underneath arbitrary mathematical functions... (mathematicians call these integrals...)
 
 Doing this, you'll
 
@@ -41,36 +41,19 @@ Start by creating a new file named `hw4pr2.py` and pasting into it this code:
         return x**2
     
 
-    # examples for getting used to list comprehensions...
+    # exampled for getting used to list comprehensions...
     
-    def lc_mult( N ):
+    def lc_dbl(N):
         """ this example takes in an int N
         and returns a list of integers
         from 0 to N-1, **each multiplied by 2**
         """
-        return [ 2*x for x in range(N) ]
-    
-    def lc_idiv( N ):
-        """ this example takes in an int N
-        and returns a list of integers
-        from 0 to N-1, **each divided by 2**
-        WARNING: this is INTEGER division...!
-        """
-        return [ x/2 for x in range(N) ]
-    
-    def lc_fdiv( N ):
-        """ this example takes in an int N
-        and returns a list of integers
-        from 0 to N-1, **each divided by 2**
-        NOTE: this is floating-point division...!
-        """
-        return [ float(x)/2 for x in range(N) ]
-    
+        return [dbl(x) for x in range(N) ]
     
     # Here is where your functions start for the lab:
 
     # Step 1, part 1
-    def unitfracs( N ):
+    def unitfracs(N):
         """ be sure to improve this docstring!
         """
         pass  # replace this line (pass is Python's empty statement)
@@ -80,29 +63,13 @@ Start by creating a new file named `hw4pr2.py` and pasting into it this code:
 
 To begin, try out _list comprehensions_ at the Python prompt... they should help build intuition about how list comprehensions work:
 
-    >>> lc_mult( 10 )   # multiplication example
+    >>> lc_dbl(10)   # multiplication example
     [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 
-    >>> lc_mult( 5 )    # a smaller example
+    >>> lc_dbl(5)    # a smaller example
     [0, 2, 4, 6, 8]
 
-    >>> lc_idiv( 10 )   # integer division
-    [0, 0, 1, 1, 2, 2, 3, 3, 4, 4]
-
-    >>> lc_fdiv( 10 )   # floating-point division
-    [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5]
-
-Read over those three one-line functions; be sure you have internalized how they work!
-
-**Note** that the calls *lc_idiv( 10 )* and *lc_fdiv( 10 )* return different lists; the first uses integer division (rounding down); the second uses floating-point division.
-
-**To do** Change the *lc_idiv* function so that it becomes
-
-    return [ float(x/2) for x in range(N) ]
-
-Before running it, decide if you think *lc_idiv( 10 )* will now be the same or different than before.
-
-Then, try and run *lc_idiv( 10 )*. Did it match your expectations? Nothing to write here, but be sure you're happy with this why this new output is what it is...!
+Read over the one-line functions; be sure you have internalized how they work!
 
 ## Integration: why? and what?
 
@@ -182,13 +149,13 @@ Be sure to fix the docstring of `unitfracs` to reflect what it does, as well.
 
 Next, take a look at how `scaledfracs(low,hi,N)` works:
 
-    >>> scaledfracs( 10, 30, 5 )
+    >>> scaledfracs(10, 30, 5)
     [10.0, 14.0, 18.0, 22.0, 26.0]
 
-    >>> scaledfracs( 41, 43, 8 )
+    >>> scaledfracs(41, 43, 8)
     [41.0, 41.25, 41.5, 41.75, 42.0, 42.25, 42.5, 42.75]
 
-    >>> scaledfracs( 0, 10, 4 )
+    >>> scaledfracs(0, 10, 4)
     [0.0, 2.5, 5.0, 7.5]
 
 **To do** Write `scaledfracs(low,hi,N)`. It creates `N` left endpoints uniformly through the interval [low,hi).
@@ -205,7 +172,7 @@ You might feel that this is closely related to the interp function you wrote in 
 
 You don't need to use that interp function, but you will want to use the ideas from it! Here it is, for reference:
 
-    def interp(low,hi,frac):
+    def interp(low, hi, frac):
         """ returns a value frac of the way from low to hi """
         return low + (hi-low)*frac
 
@@ -226,21 +193,21 @@ Although the goal is to handle arbitrary functions, we'll start with a concrete 
 
 **To do** Write a function sqfracs(low,hi,N) that works as follows:
 
-    >>> sqfracs(4,10,6)
+    >>> sqfracs(4, 10, 6)
     [16.0, 25.0, 36.0, 49.0, 64.0, 81.0]
 
-    >>> sqfracs(0,10,5)
+    >>> sqfracs(0, 10, 5)
     [0.0, 4.0, 16.0, 36.0, 64.0]
 
 Here, `sqfracs` is very similar to `scaledfracs` _except that each value is squared_.
 
 **Hint!** Use `scaledfracs` here. In the same way that `scaledfracs` used `unitfracs`, `sqfracs` can use `scaledfracs`! Consider the snippet:
 
-    for x in scaledfracs(low,hi,N)
+    for x in scaledfracs(low, hi, N)
 
 ### Writing `f_of_fracs`...
 
-**To do** Write a function `f_of_fracs(f,low,hi,N)` that works as follows:
+**To do** Write a function `f_of_fracs(f, low, hi, N)` that works as follows:
 
     >>> f_of_fracs(dbl, 10, 20, 5)
     [20.0, 24.0, 28.0, 32.0, 36.0]
@@ -312,10 +279,10 @@ To get started, here is the _signature_ (the `def` line) and docstring for `inte
 
 Some examples on how `sum` works:
 
-    >>> sum( [10, 4, 1] )
+    >>> sum([10, 4, 1])
     15
 
-    >>> sum( range(0,101) )
+    >>> sum(range(0,101))
     5050
 
 If your `integrate` function works, congratulations! You've built a general-purpose routine that can provide integrals for any computable function (including those for which there is no closed-form integral).
