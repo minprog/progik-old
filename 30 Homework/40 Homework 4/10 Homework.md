@@ -7,9 +7,9 @@
     * `hw4pr0.txt`
 * Problem 1: Turtle Graphics! (Lab problem) [30 points]
     * `hw4pr1.py`
-* Problem 2: The Sleepwalking Student [35 points]
+* Problem 2: an integral part of Python: List comprehensions [30 points]
     * `hw4pr2.py`
-* Problem 3: an integral part of Python: List comprehensions [30 points]
+* Problem 3: The Sleepwalking Student [35 points]
     * `hw4pr3.py`
 * Problem 4: extra-recursive graphics
     * `hw4pr4.py` Optional/extra 
