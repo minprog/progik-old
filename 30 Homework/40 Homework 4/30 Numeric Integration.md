@@ -141,8 +141,6 @@ Take a look at how `unitfracs(N)` works:
 
 As its name suggests, it returns a list of evenly-spaced left-hand endpoints (fractions) in the unit interval [0,1).
 
-**Hint!** Copy, paste, and alter the example function *lc_fdiv* in order to write unitfracs . _You will only need to change a **single** character from that code!_
-
 Be sure to fix the docstring of `unitfracs` to reflect what it does, as well.
 
 ### Writing `scaledfracs`...
