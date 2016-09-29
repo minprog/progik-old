@@ -33,9 +33,9 @@ Modern computers use UTF-8 instead of ASCII. But UTF-8 is backwards compatible w
 ![ASCII table](ascii.png)
 
 
-##Function to write #1: encipher( S, n )
+##Function to write #1: encipher(S, n)
 
-Write the function `encipher( S , n )` that takes as input a string `S` and a non-negative integer `n` between 0 and 25. Then, `encipher` should return a new string in which the letters in `S` have been _rotated_ by `n` characters forward in the alphabet, wrapping around as needed.
+Write the function `encipher(S , n)` that takes as input a string `S` and a non-negative integer `n` between 0 and 25. Then, `encipher` should return a new string in which the letters in `S` have been _rotated_ by `n` characters forward in the alphabet, wrapping around as needed.
 
 For this problem, you should assume that upper-case letters are _rotated_ to upper-case letters, lower-case letters are _rotated_ to lower-case letters, and all non-alphabetic characters are left _unchanged_. For example, if we were to shift the letter `'y'` by 3, we would get `'b'` and if we were to shift the letter `'Y'` by 3 we would get `'B'`. (In python, you can use the test `if 'a' <= c <= 'z':` to determine if a character `c` is between `'a'` and `'z'` in the alphabet.)
 
@@ -61,31 +61,28 @@ Remember that
 * Remember that you'll need to wrap the alphabet and **leave non-alphabetic characters unchanged**
 * Test out your rot(c,n) function to make sure it works:
 
-    rot('a',2)  -->  'c'
-    rot('y',2)  -->  'a'
-    rot('A',3)  -->  'D'
-    rot('Y',3)  -->  'B'
-    rot(' ',4)  -->  ' '  
+    rot('a', 2)  -->  'c'
+    rot('y', 2)  -->  'a'
+    rot('A', 3)  -->  'D'
+    rot('Y', 3)  -->  'B'
+    rot(' ', 4)  -->  ' '  
 
-###Hints, part 2  If you have `rot(c,n)`, you're nearly there!
+###Hints, part 2  If you have `rot(c, n)`, you're nearly there!
 
 * With `rot(c,n)`, this problem is identical to the `dna_to_rna(transcribe)` problem!
-* That is, you can handle one letter at a time (using `rot(c,n)`) in just the same way... .
-* Alternatively, you can use a list comprehension to apply `rot(c,n)` many times.
-* If you do use a list comprehension, then use `list_to_str` (below) to get back to a string! 
+    * That is, you can handle one letter at a time (using `rot(c, n)`) in just the same way... .
+* Alternatively, you can use a list comprehension to apply `rot(c, n)` many times.
+    * If you do use a list comprehension, then use the built-in function `join`
+    to join the list to a single string. It is a bit of a strange function in 
+    the way you use it; you start with the string you want to put between each
+    string, called the *separator* and then `.join(` *the list you want to join*
+    `)`. Given that we just want to join the elements, our separator is the 
+    *empty string* `''`. Here is an example of how to use the function:
 
-    ['H','e','l','p','!']
+    >>> ''.join(['H', 'e', 'l', 'l', 'o'])
+    'Hello'
 
-If you have a list of characters and want a string, feel free to use this function (copy it to your file) to convert from list to string:
-
-    def list_to_str( L ):
-        """ L must be a list of characters; then,
-        this returns a single string from them
-        """
-        if len(L) == 0: return ''
-        return L[0] + list_to_str( L[1:] )
-
-Here's how to test `list_to_str`:  `list_to_str( ['c','s','5','!'] )` should return `'cs5!'`
+The full description of the `join` function can be found [here](https://docs.python.org/2/library/stdtypes.html#str.join).
 
 Some encipher examples:
 
