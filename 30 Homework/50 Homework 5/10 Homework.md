@@ -69,11 +69,11 @@ Remember that
 * Remember that you'll need to wrap the alphabet and **leave non-alphabetic characters unchanged**
 * Test out your rot(c, n) function to make sure it works:
 
-    rot('a', 2)  -->  'c'
-    rot('y', 2)  -->  'a'
-    rot('A', 3)  -->  'D'
-    rot('Y', 3)  -->  'B'
-    rot(' ', 4)  -->  ' '  
+    rot('a', 2)  -->  'c'  
+    rot('y', 2)  -->  'a'  
+    rot('A', 3)  -->  'D'  
+    rot('Y', 3)  -->  'B'  
+    rot(' ', 4)  -->  ' '    
 
 ###Hints, part 2  If you have `rot(c, n)`, you're nearly there!
 
@@ -89,11 +89,11 @@ Remember that
     of how to use the function:
     
 ```
->>> ''.join(['H', 'e', 'l', 'l', 'o'])
+    >>> ''.join(['H', 'e', 'l', 'l', 'o'])
 ```
 <br/>
 ```
-'Hello'
+    'Hello'
 ```
 
 The full description of the `join` function can be found [here](https://docs.python.org/2/library/stdtypes.html#str.join).
@@ -126,11 +126,11 @@ Hints:
 
 * A good place to start is to create a line with every possible ENCODING, something like this:
   
-    L = [    __________        for n in range(26)]
+    L = [ ... for n in range(26)]
   
 * Then, you can use the `LoL` _list of lists_ technique in which each element of `L` gets a score. It might look something like this:
   
-    LoL = [[    __________    for letter in encoding] for encoding in L]
+    LoL = [[ ... for letter in encoding] for encoding in L]
   
 * It's entirely up to you how you might want to score _Englishness._ See below for some starting points... .
 
