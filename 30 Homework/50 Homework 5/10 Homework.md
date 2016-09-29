@@ -78,13 +78,14 @@ Remember that
     string, called the *separator* and then `.join(` *the list you want to join*
     `)`. Given that we just want to join the elements, our separator is the 
     *empty string* `''`. Here is an example of how to use the function:
-    ```
-    >>> ''.join(['H', 'e', 'l', 'l', 'o'])
-    ```
-    <br/>
-    ```
-    'Hello'
-    ```
+    
+```
+>>> ''.join(['H', 'e', 'l', 'l', 'o'])
+```
+<br/>
+```
+'Hello'
+```
 
 The full description of the `join` function can be found [here](https://docs.python.org/2/library/stdtypes.html#str.join).
 
