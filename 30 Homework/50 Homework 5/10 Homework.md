@@ -80,7 +80,8 @@ Remember that
     *empty string* `''`. Here is an example of how to use the function:
     ```
     >>> ''.join(['H', 'e', 'l', 'l', 'o'])
-    ```  
+    ```
+    <br/>
     ```
     'Hello'
     ```
