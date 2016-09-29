@@ -79,6 +79,7 @@ Remember that
     `)`. Given that we just want to join the elements, our separator is the 
     *empty string* `''`. Here is an example of how to use the function:
 
+
     >>> ''.join(['H', 'e', 'l', 'l', 'o'])
     'Hello'
 
