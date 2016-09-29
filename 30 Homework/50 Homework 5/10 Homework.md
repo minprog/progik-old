@@ -83,6 +83,7 @@ Remember that
 >>> ''.join(['H', 'e', 'l', 'l', 'o'])
 'Hello'
 ```
+
 The full description of the `join` function can be found [here](https://docs.python.org/2/library/stdtypes.html#str.join).
 
 Some encipher examples:
