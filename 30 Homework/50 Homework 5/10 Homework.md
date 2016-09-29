@@ -94,6 +94,7 @@ Remember that
     ```
     'Hello'
     ```
+    <br/>
     The full description of the `join` function can be found [here](https://docs.python.org/2/library/stdtypes.html#str.join).
 
 Some encipher examples:
