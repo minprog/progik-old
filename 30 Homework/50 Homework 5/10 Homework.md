@@ -79,10 +79,10 @@ Remember that
     `)`. Given that we just want to join the elements, our separator is the 
     *empty string* `''`. Here is an example of how to use the function:
 
-
-    >>> ''.join(['H', 'e', 'l', 'l', 'o'])
-    'Hello'
-
+```
+>>> ''.join(['H', 'e', 'l', 'l', 'o'])
+'Hello'
+```
 The full description of the `join` function can be found [here](https://docs.python.org/2/library/stdtypes.html#str.join).
 
 Some encipher examples:
