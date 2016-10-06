@@ -1,6 +1,7 @@
 name: hw6
-required:
-  - hw6pr0.txt
-  - wordgames.py
-optional:
-  - computer.py
+files:
+    required:
+      - hw6pr0.txt
+      - wordgames.py
+    optional:
+      - computer.py
