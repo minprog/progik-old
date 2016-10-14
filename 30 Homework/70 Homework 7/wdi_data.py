@@ -31,6 +31,7 @@ if args.show_countries:
     print ''
 
 if args.keywords != []:
+    args.keywords = [w.lower() for w in args.keywords]
     for c in sorted(datacodes.keys()):
         desc = datacodes[c].lower()
         for w in args.keywords:
