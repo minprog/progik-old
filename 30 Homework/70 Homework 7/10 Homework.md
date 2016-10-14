@@ -102,30 +102,110 @@ interesting.
 
 ## Working with the data
 
-Work in a notebook called `hw7.ipynb`. Each function you write should be a
-separate cell.
+Create a new notebook called `hw7.ipynb`. In the first cell write a short intro
+about your data file(s) using markdown.
 
-### Function 1
+For this next part you are asked to write several functions, each function you
+write should be a separate notebook cell. Make sure to add a short markdown
+explanation beneath each one and add some comments in the function aswell. The
+whole notebook should be understandable without knowledge of the exact
+assignment.
 
-Reading file into a dictionary
+### Function 1: `read_data(filename)`
 
-### Function 2
+The first function you should write is `read_data(filename)`. It should take
+one argument, the filename you want to read, and return the data in the file
+as a dictionary.
 
-Average value for several countries
+Reading a file in *Python* is easy, we also used it in the Lab last week to 
+write the `load_words()` function. If you don't remember how to do it, take a
+quick look at [Lab 6](https://progik.mprog.nl/labs/lab-6).
 
-### Function 3
+If you open up one of the `.csv` files or print the result of reading the lines,
+you can see the structure of each file. You should notice that there are a lot
+of values on each line, separated by commas, in fact that is exactly what
+**CSV** stands for *Comma Separated Values*.
 
-Creating a new subset of countries dict
+In order to actually use this data, we need to split each line into a list of
+separate values. Fortunately *Python* has a built-in function for just that, 
+unsuprisingly called `split()`. The documentation can be found
+[here](https://docs.python.org/2/library/stdtypes.html#str.split).
+Look at the examples listed there and see if you can figure out how it works.
 
-### Function 4
+The final dictionary you return should contain the country-codes as the *keys*
+and the *values* should be the complete list of values for that country. Each
+value in the list should be converted to a float, so it can be used to compute
+with.
 
-Slicing all data from a certain year until a certain year
+Make sure to add a call to your function at bottom the cell and print the result,
+so you can see it actually works. Also add a new markdown cell and add a short 
+explanation of what you did.
 
-### Function 5
+### Function 2: `subset_countries(data, country_list)`
 
-Computing the growth / difference between each year for all the data
+Create a new code cell for the next function; `subset_countries(data, country_list)`.
+This function should take 2 arguments; the dictionary containing the
+data and and a list of country-codes. It should then return a new dictinoary,
+containing only the data for the countries in the country-code list. The
+structure of the dictionary should be exactly the same as the input dictionary,
+only the number of key-value pairs should change. 
+
+Don't forget to add a test at the bottom of the cell, where you print the
+result. Try and see if the values you get are what you would expect. Also, don't
+forget to add a short markdown description in a separate cell below.
+
+### Function 3: `average_data(data)`
+
+In the next code cell write a function called `average_data(data)`.
+This function should take only one argument; the dictionary containing the data.
+It should then return a single list, containing the average values for all
+the country-code in the dictionary, computed separately for each year in the
+data.
+
+Again, add a test at the bottom and print the result. Make sure to verify that
+the produced result is correct. If everything works, add a short description
+in markdown.
+
+### Function 4: `year_slice(data, start, end)`
+
+This next function is called `year_slice(data, start, end)`. It should take
+3 arguments; the dictionary containing the data, the starting year for the data
+and the end year for the data. It should then cut the data for each
+country-code to only start at the start year and end at the end year. Remember
+that the default starting year is 1960 and the default end year is 2015. So for
+instance, if you called the function like so
+    
+    year_slice(data, 1970, 2015)
+
+you would expect the first 10 years to be removed from the data for each country.
+
+Include a similar test in your code cell and print the result. Is it as you
+expected? Add another short description in markdown below.
+
+### Function 5: `compute_growth(data)`
+
+The last function to write will be `compute_growth(data)`. It should take one
+argument, the dictionary containing the data and compute the 
+difference (or growth) of the data between each year, for all countries. If
+the value of the data increases from one year to the next, the growth will be
+postive for that year and the larger the value, the bigger the increase.
+Conversely if the  value drops from one year to the next, the growth will be
+negative. 
+
+Also test this function, include a print and a short description in markdown.
 
 ## Starting the investigation
 
-Write a research question. Plot some data. Write a conclusion in markdown. Go.
+For the last part of this assignment you are asked to investigate the data
+for yourself. Start by writing a short introduction to the part of the data
+you are investigating and add a research question you would like to try and
+answer using the data.
+
+Plot your data in a graph using matplotlib and write down your findings in
+markdown. Include at least 2 graphs and separate conclusions.
+
+Zip the notebook folder, including any images you might want to add and the 
+data files you created together in a single zip called `hw7.zip`. **Do not** add
+the orginal `WDI_Data.csv`.
+
 
