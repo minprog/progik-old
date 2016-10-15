@@ -233,7 +233,7 @@ investigating / plotting parts of the data. After each code cell, write a
 description in markdown of what you did at that step and why.
 
 You can then add new code-cells to plot other parts of the data, based on what
-you found in earlier steps. Feel free to add new functions, if you need them
+you found in earlier steps. Feel free to add new functions if you need them
 for your data. Each code-cell step should be accompanied by a description in
 markdown. You can also search for other references on your topic and include
 them in the report as links or images.
