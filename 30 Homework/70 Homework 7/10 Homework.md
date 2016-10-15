@@ -49,7 +49,7 @@ Make sure to unpack the zip. You will only need the `WDI_Data.csv` file.
 We wrote a small python program to extract information from the `WDI_Data`
 file. The program will do some simple conversions, fill in missing values and
 can filter what parts of the data you want specifically. The new data will then
-be written to a seperate file.
+be written to a separate file.
 
 The program can be downloaded [here](wdi_data.py).
 
@@ -127,25 +127,25 @@ of values on each line, separated by commas, in fact that is exactly what
 **CSV** stands for *Comma Separated Values*.
 
 In order to actually use this data, we need to split each line into a list of
-separate values. Fortunately *Python* has a built-in function for just that, 
+separate elements. Fortunately *Python* has a built-in function for just that, 
 unsuprisingly called `split()`. The documentation can be found
 [here](https://docs.python.org/2/library/stdtypes.html#str.split).
 Look at the examples listed there and see if you can figure out how it works.
 
 The final dictionary you return should contain the country-codes as the *keys*
-and the *values* should be the complete list of values for that country. Each
-value in the list should be converted to a float, so it can be used to compute
-with.
+and the *values* should be the complete list of the data for that country (1960
+being the first value and 2015 being the last). Each element in the list should
+be converted to a float, so it can be computed with.
 
 Make sure to add a call to your function at bottom the cell and print the result,
-so you can see it actually works. Also add a new markdown cell and add a short 
-explanation of what you did.
+so you can see if it actually works. Also add a new markdown cell and add a
+short explanation of what you did.
 
 ### Function 2: `subset_countries(data, country_list)`
 
 Create a new code cell for the next function; `subset_countries(data, country_list)`.
-This function should take 2 arguments; the dictionary containing the
-data and and a list of country-codes. It should then return a new dictinoary,
+This function should take 2 arguments; the dictionary containing your
+data and and a list of country-codes. It should then return a new dictionary
 containing only the data for the countries in the country-code list. The
 structure of the dictionary should be exactly the same as the input dictionary,
 only the number of key-value pairs should change. 
@@ -157,13 +157,14 @@ forget to add a short markdown description in a separate cell below.
 ### Function 3: `average_data(data)`
 
 In the next code cell write a function called `average_data(data)`.
-This function should take only one argument; the dictionary containing the data.
+This function should take only one argument, the dictionary containing the data.
 It should then return a single list, containing the average values for all
 the country-code in the dictionary, computed separately for each year in the
-data.
+data. So the first value in the list should be the average for 1960, the second
+for 1961, etc.
 
 Again, add a test at the bottom and print the result. Make sure to verify that
-the produced result is correct. If everything works, add a short description
+the produced list is correct. If everything works, add a short description
 in markdown.
 
 ### Function 4: `year_slice(data, start, end)`
@@ -184,28 +185,66 @@ expected? Add another short description in markdown below.
 
 ### Function 5: `compute_growth(data)`
 
-The last function to write will be `compute_growth(data)`. It should take one
+Write a new function called `compute_growth(data)`. It should take one
 argument, the dictionary containing the data and compute the 
 difference (or growth) of the data between each year, for all countries. If
-the value of the data increases from one year to the next, the growth will be
-postive for that year and the larger the value, the bigger the increase.
-Conversely if the  value drops from one year to the next, the growth will be
-negative. 
+the value of the data for a country increases from one year to the next, the
+growth will be postive for that year (the larger the value, the bigger the
+increase). Conversely if the value drops from one year to the next, the growth
+will be negative. 
+
+This means the function should return a new dictionary, containing the same
+country-codes, but the values should be a list of the differences between each
+year. So the first value for a country would be the difference between 1960 and
+1961, and the second the difference between 1961 and 1962, ect. Note that these
+value lists will thus be 1 element shorter than the original data lists.
 
 Also test this function, include a print and a short description in markdown.
 
+### Function 6: `plot_data(data, start, end)`
+
+In this last function we will actually visualise the data! The function should
+take 3 arguments, the dictionary containing the data, the starting year for
+the data and the end year for the data. It should then plot that data using
+matplotlib. Make a new line in the plot for each country, where the data for
+that country are the y-values, and the x-values run from `start` to `end`. Be
+sure to label each line with its country-code. If you don't remember how to
+do something in matplotlib, take another look at the tutorial in the matplotlib
+part of the Lab.
+
+Add a test below your function and see if it produces a plot. *Hint:* You might
+want to add a `subset_countries()` in your test, to avoid drawing too many
+lines in your plot. If everything works correctly, add a short description in
+markdown.
+
 ## Starting the investigation
 
-For the last part of this assignment you are asked to investigate the data
-for yourself. Start by writing a short introduction to the part of the data
-you are investigating and add a research question you would like to try and
-answer using the data.
+Now we should have most of the tools needed to do an investigation of the data.
+This last part of the homework will be a lot more freeform, where it is up to
+you to write a report about a part of the data you think is interesting.
 
-Plot your data in a graph using matplotlib and write down your findings in
-markdown. Include at least 2 graphs and separate conclusions.
+Start by adding a new markdown cell where you write a short introduction of the
+parts of the dataset you want to investigate and describe what each data-file
+contains exactly. Then try to formulate a question or questions you would like
+to try and answer using this data (your research question).
 
-Zip the notebook folder, including any images you might want to add and the 
-data files you created together in a single zip called `hw7.zip`. **Do not** add
-the orginal `WDI_Data.csv`.
+Make a new code cell and, using the functions you already wrote, start
+investigating / plotting parts of the data. After each code cell, write a
+description in markdown of what you did at that step and why.
 
+You can then add new code-cells to plot other parts of the data, based on what
+you found in earlier steps. Feel free to add new functions, if you need them
+for your data. Each code-cell step should be accompanied by a description in
+markdown. You can also search for other references on your topic and include
+them in the report as links or images.
+
+Your notebook report should contain at least 2 different plots of your data and
+accompanying descriptions. At least one external reference to your topic is
+required as well. The last markdown cell should contain a conclusion, i.e. what
+you think the answer is to your research question stated in the introdution,
+based on the data you found.
+
+Zip the notebook folder, including `hw7.ipynb`, any images you might want to
+add and the data files you created together in a single zip called `hw7.zip`.
+**Do not** add the orginal `WDI_Data.csv` file.
 
