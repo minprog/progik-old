@@ -51,7 +51,7 @@ file. The program will do some simple conversions, fill in missing values and
 can filter what parts of the data you want specifically. The new data will then
 be written to a separate file.
 
-The program can be downloaded [here](wdi_data.py).
+The program can be downloaded [here](wdi_data.py) (right-click and save-as).
 
 *The program should be stored in the same folder as `WDI_Data.csv` in order for
 it to work.*
