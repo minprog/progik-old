@@ -71,7 +71,7 @@ descriptions. For example, if we wanted to search all data containing the term
     ...
 
 and get a list of all the relevant datacodes. Now say we wanted the "CO2
-emissions form gaseous fuel consumption (kilotons)" then we would use the `-c`
+emissions from gaseous fuel consumption (kilotons)", then we would use the `-c`
 option to select the code to write to a new file. In this case that would be
 
     python wdi_data.py -c EN.ATM.CO2E.GF.KT
