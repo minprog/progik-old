@@ -4,7 +4,7 @@
 For this weeks homework we'll be working with data from the world bank,
 listing many different development indicators for many countries. This means
 you can find anything from CO2 emissions to the number of internet connections, 
-listed per country from 1960 until 2015. The description from the the world
+listed per country from 1960 until 2016. The description from the the world
 bank reads:
 
 *The primary World Bank collection of development indicators, compiled from
@@ -78,7 +78,7 @@ option to select the code to write to a new file. In this case that would be
 
 which would produce a new file called EN.ATM.CO2E.GF.KT.csv (feel free to
 rename it to something a little more clear) containing the emission data from
-all the countries from 1960 to 2015.
+all the countries from 1960 to 2016.
 
 Each line in this file will be the data for a country. The first column will be
 the country-code for that country. If you want to know what all the country-codes
@@ -134,7 +134,7 @@ Look at the examples listed there and see if you can figure out how it works.
 
 The final dictionary you return should contain the country-codes as the *keys*
 and the *values* should be the complete list of the data for that country (1960
-being the first value and 2015 being the last). Each element in the list should
+being the first value and 2016 being the last). Each element in the list should
 be converted to a float, so it can be computed with.
 
 Make sure to add a call to your function at bottom the cell and print the result,
@@ -173,10 +173,10 @@ This next function is called `year_slice(data, start, end)`. It should take
 3 arguments; the dictionary containing the data, the starting year for the data
 and the end year for the data. It should then cut the data for each
 country-code to only start at the start year and end at the end year. Remember
-that the default starting year is 1960 and the default end year is 2015. So for
+that the default starting year is 1960 and the default end year is 2016. So for
 instance, if you called the function like so
     
-    year_slice(data, 1970, 2015)
+    year_slice(data, 1970, 2016)
 
 you would expect the first 10 years to be removed from the data for each country.
 
