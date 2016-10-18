@@ -93,6 +93,23 @@ De bedoeling is dat je tijdens de cursus steeds betere en leesbaardere programma
 
 De wekelijkse <strong>deadline</strong> is vrijdag om 23:59 uur. Mis je de deadline, dan hebben wij geen tijd meer om het na te kijken en wordt het lastig het vak nog te halen. Stuur daarom altijd vóór de deadline in wat je hebt.
 
+### Becijfering van de opdrachten
+
+De opdrachten worden dus beoordeeld op `scope`, `correctness`, `design` en `style`.
+Als je opgave op al deze aspecten is beoordeeld (geld niet voor sommige opdrachten
+aan het begin van de cursus), is de formule voor je cijfer
+
+    grade = scope * (3 * correctness + 2 * design + style)
+
+Gezien je voor elke van deze onderdelen maximaal 5 punten kunt halen, is het 
+totale maximum daarmee 150. Alle cijfers worden uiteindelijk dan geschaald naar
+de range van 1 tot 10, dus
+
+    grade = grade / 150 * 9 + 1
+
+Als het totale maximum lager is omdat sommige onderdelen niet mee zijn
+meegerekend, dan wordt het uiteraard daarnaar geschaald. 
+
 ## Eindcijfer
 
 Het eindcijfer is gebaseerd op de tussencijfers die je verdient bij de wekelijkse opdrachten (75%) en het cijfer van het tentamen (25%). Het tentamen moet hoe dan ook voldoende gemaakt worden, zodat je in een gecontroleerde omgeving laat zien dat je er echt iets van begrijpt.
