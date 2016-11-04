@@ -1,5 +1,0 @@
-name: hw9
-files:
-    required:
-      - hw7pr0.txt
-      - conway.py
